@@ -1,0 +1,710 @@
+2020-08-10 02:08:28 | [INFO]    | Discordia 2.8.3
+2020-08-10 02:08:28 | [INFO]    | Connecting to Discord...
+2020-08-10 02:08:29 | [ERROR]   | 401 - Unauthorized : GET https://discordapp.com/api/v7/users/@me
+2020-08-10 02:08:29 | [ERROR]   | Could not authenticate, check token: HTTP Error 0 : 401: Unauthorized
+2020-08-10 02:11:57 | [INFO]    | Discordia 2.8.3
+2020-08-10 02:11:57 | [INFO]    | Connecting to Discord...
+2020-08-10 02:11:57 | [ERROR]   | 401 - Unauthorized : GET https://discordapp.com/api/v7/users/@me
+2020-08-10 02:11:57 | [ERROR]   | Could not authenticate, check token: HTTP Error 0 : 401: Unauthorized
+2020-08-10 02:13:45 | [INFO]    | Discordia 2.8.3
+2020-08-10 02:13:45 | [INFO]    | Connecting to Discord...
+2020-08-10 02:13:46 | [INFO]    | Authenticated as 'B'#7189
+2020-08-10 02:13:46 | [INFO]    | Launching shard 0 (1 out of 1)...
+2020-08-10 02:13:46 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2020-08-10 02:13:46 | [INFO]    | Shard 0 : Received HELLO
+2020-08-10 02:13:46 | [INFO]    | Shard 0 : Received READY
+2020-08-10 02:23:15 | [INFO]    | Discordia 2.8.3
+2020-08-10 02:23:15 | [INFO]    | Connecting to Discord...
+2020-08-10 02:23:15 | [INFO]    | Authenticated as 'B'#7189
+2020-08-10 02:23:15 | [INFO]    | Launching shard 0 (1 out of 1)...
+2020-08-10 02:23:15 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2020-08-10 02:23:15 | [INFO]    | Shard 0 : Received HELLO
+2020-08-10 02:23:16 | [INFO]    | Shard 0 : Received READY
+2020-08-10 02:27:53 | [INFO]    | Discordia 2.8.3
+2020-08-10 02:27:53 | [INFO]    | Connecting to Discord...
+2020-08-10 02:27:54 | [INFO]    | Authenticated as 'B'#7189
+2020-08-10 02:27:54 | [INFO]    | Launching shard 0 (1 out of 1)...
+2020-08-10 02:27:54 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2020-08-10 02:27:54 | [INFO]    | Shard 0 : Received HELLO
+2020-08-10 02:27:54 | [INFO]    | Shard 0 : Received READY
+2020-08-10 15:45:23 | [INFO]    | Discordia 2.8.3
+2020-08-10 15:45:23 | [INFO]    | Connecting to Discord...
+2020-08-10 15:45:24 | [INFO]    | Authenticated as 'B'#7189
+2020-08-10 15:45:24 | [INFO]    | Launching shard 0 (1 out of 1)...
+2020-08-10 15:45:24 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2020-08-10 15:45:24 | [INFO]    | Shard 0 : Received HELLO
+2020-08-10 15:45:24 | [INFO]    | Shard 0 : Received READY
+2020-08-10 15:55:16 | [INFO]    | Discordia 2.8.3
+2020-08-10 15:55:16 | [INFO]    | Connecting to Discord...
+2020-08-10 15:55:16 | [INFO]    | Authenticated as 'B'#7189
+2020-08-10 15:55:16 | [INFO]    | Launching shard 0 (1 out of 1)...
+2020-08-10 15:55:16 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2020-08-10 15:55:16 | [INFO]    | Shard 0 : Received HELLO
+2020-08-10 15:55:17 | [INFO]    | Shard 0 : Received READY
+2020-08-10 16:19:09 | [INFO]    | Discordia 2.8.3
+2020-08-10 16:19:09 | [INFO]    | Connecting to Discord...
+2020-08-10 16:19:10 | [INFO]    | Authenticated as 'B'#7189
+2020-08-10 16:19:10 | [INFO]    | Launching shard 0 (1 out of 1)...
+2020-08-10 16:19:10 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2020-08-10 16:19:10 | [INFO]    | Shard 0 : Received HELLO
+2020-08-10 16:19:10 | [INFO]    | Shard 0 : Received READY
+2020-08-10 16:25:12 | [INFO]    | Discordia 2.8.3
+2020-08-10 16:25:12 | [INFO]    | Connecting to Discord...
+2020-08-10 16:25:12 | [INFO]    | Authenticated as 'B'#7189
+2020-08-10 16:25:12 | [INFO]    | Launching shard 0 (1 out of 1)...
+2020-08-10 16:25:12 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2020-08-10 16:25:12 | [INFO]    | Shard 0 : Received HELLO
+2020-08-10 16:25:12 | [INFO]    | Shard 0 : Received READY
+2020-08-10 16:30:12 | [INFO]    | Discordia 2.8.3
+2020-08-10 16:30:12 | [INFO]    | Connecting to Discord...
+2020-08-10 16:30:12 | [INFO]    | Authenticated as 'B'#7189
+2020-08-10 16:30:12 | [INFO]    | Launching shard 0 (1 out of 1)...
+2020-08-10 16:30:12 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2020-08-10 16:30:12 | [INFO]    | Shard 0 : Received HELLO
+2020-08-10 16:30:13 | [INFO]    | Shard 0 : Received READY
+2020-08-10 17:25:23 | [INFO]    | Discordia 2.8.3
+2020-08-10 17:25:23 | [INFO]    | Connecting to Discord...
+2020-08-10 17:25:23 | [INFO]    | Authenticated as 'B'#7189
+2020-08-10 17:25:23 | [INFO]    | Launching shard 0 (1 out of 1)...
+2020-08-10 17:25:23 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2020-08-10 17:25:23 | [INFO]    | Shard 0 : Received HELLO
+2020-08-10 17:25:24 | [INFO]    | Shard 0 : Received READY
+2020-08-10 17:58:51 | [INFO]    | Discordia 2.8.3
+2020-08-10 17:58:51 | [INFO]    | Connecting to Discord...
+2020-08-10 17:58:51 | [INFO]    | Authenticated as 'B'#7189
+2020-08-10 17:58:51 | [INFO]    | Launching shard 0 (1 out of 1)...
+2020-08-10 17:58:51 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2020-08-10 17:58:51 | [INFO]    | Shard 0 : Received HELLO
+2020-08-10 17:58:52 | [INFO]    | Shard 0 : Received READY
+2020-08-10 18:01:13 | [INFO]    | Discordia 2.8.3
+2020-08-10 18:01:13 | [INFO]    | Connecting to Discord...
+2020-08-10 18:01:13 | [INFO]    | Authenticated as 'B'#7189
+2020-08-10 18:01:13 | [INFO]    | Launching shard 0 (1 out of 1)...
+2020-08-10 18:01:13 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2020-08-10 18:01:13 | [INFO]    | Shard 0 : Received HELLO
+2020-08-10 18:01:13 | [INFO]    | Shard 0 : Received READY
+2020-08-10 18:01:50 | [INFO]    | Discordia 2.8.3
+2020-08-10 18:01:50 | [INFO]    | Connecting to Discord...
+2020-08-10 18:01:51 | [INFO]    | Authenticated as 'B'#7189
+2020-08-10 18:01:51 | [INFO]    | Launching shard 0 (1 out of 1)...
+2020-08-10 18:01:51 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2020-08-10 18:01:51 | [INFO]    | Shard 0 : Received HELLO
+2020-08-10 18:01:51 | [INFO]    | Shard 0 : Received READY
+2020-08-10 18:04:36 | [INFO]    | Discordia 2.8.3
+2020-08-10 18:04:36 | [INFO]    | Connecting to Discord...
+2020-08-10 18:04:36 | [INFO]    | Authenticated as 'B'#7189
+2020-08-10 18:04:36 | [INFO]    | Launching shard 0 (1 out of 1)...
+2020-08-10 18:04:37 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2020-08-10 18:04:37 | [INFO]    | Shard 0 : Received HELLO
+2020-08-10 18:04:37 | [INFO]    | Shard 0 : Received READY
+2020-08-10 18:06:00 | [INFO]    | Discordia 2.8.3
+2020-08-10 18:06:00 | [INFO]    | Connecting to Discord...
+2020-08-10 18:06:00 | [INFO]    | Authenticated as 'B'#7189
+2020-08-10 18:06:00 | [INFO]    | Launching shard 0 (1 out of 1)...
+2020-08-10 18:06:00 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2020-08-10 18:06:00 | [INFO]    | Shard 0 : Received HELLO
+2020-08-10 18:06:00 | [INFO]    | Shard 0 : Received READY
+2020-08-10 18:09:34 | [INFO]    | Discordia 2.8.3
+2020-08-10 18:09:34 | [INFO]    | Connecting to Discord...
+2020-08-10 18:09:35 | [INFO]    | Authenticated as 'B'#7189
+2020-08-10 18:09:35 | [INFO]    | Launching shard 0 (1 out of 1)...
+2020-08-10 18:09:35 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2020-08-10 18:09:35 | [INFO]    | Shard 0 : Received HELLO
+2020-08-10 18:09:35 | [INFO]    | Shard 0 : Received READY
+2020-08-10 18:17:07 | [INFO]    | Discordia 2.8.3
+2020-08-10 18:17:07 | [INFO]    | Connecting to Discord...
+2020-08-10 18:17:08 | [INFO]    | Authenticated as 'B'#7189
+2020-08-10 18:17:08 | [INFO]    | Launching shard 0 (1 out of 1)...
+2020-08-10 18:17:08 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2020-08-10 18:17:08 | [INFO]    | Shard 0 : Received HELLO
+2020-08-10 18:17:08 | [INFO]    | Shard 0 : Received READY
+2020-08-10 18:46:30 | [INFO]    | Discordia 2.8.3
+2020-08-10 18:46:30 | [INFO]    | Connecting to Discord...
+2020-08-10 18:46:30 | [INFO]    | Authenticated as 'B'#7189
+2020-08-10 18:46:31 | [INFO]    | Launching shard 0 (1 out of 1)...
+2020-08-10 18:46:32 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2020-08-10 18:46:32 | [INFO]    | Shard 0 : Received HELLO
+2020-08-10 18:46:32 | [INFO]    | Shard 0 : Received READY
+2020-08-10 18:47:08 | [INFO]    | Discordia 2.8.3
+2020-08-10 18:47:08 | [INFO]    | Connecting to Discord...
+2020-08-10 18:47:09 | [INFO]    | Authenticated as 'B'#7189
+2020-08-10 18:47:09 | [INFO]    | Launching shard 0 (1 out of 1)...
+2020-08-10 18:47:09 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2020-08-10 18:47:09 | [INFO]    | Shard 0 : Received HELLO
+2020-08-10 18:47:09 | [INFO]    | Shard 0 : Received READY
+2020-08-10 18:58:43 | [WARNING] | Shard 0 : 4003 - Not authenticated.
+2020-08-10 18:58:43 | [INFO]    | Shard 0 : Disconnected
+2020-08-10 18:58:43 | [INFO]    | Shard 0 : Reconnecting after 1098 ms...
+2020-08-10 18:58:44 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2020-08-10 18:58:44 | [INFO]    | Shard 0 : Received HELLO
+2020-08-10 18:58:44 | [INFO]    | Shard 0 : Session invalidated, re-identifying...
+2020-08-10 18:58:47 | [WARNING] | Shard 0 : 4004 - Authentication failed.
+2020-08-10 18:58:47 | [INFO]    | Shard 0 : Disconnected
+2020-08-10 18:58:47 | [INFO]    | Shard 0 : Reconnecting after 2022 ms...
+2020-08-10 18:58:50 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2020-08-10 18:58:50 | [INFO]    | Shard 0 : Received HELLO
+2020-08-10 18:58:55 | [WARNING] | Shard 0 : 4004 - Authentication failed.
+2020-08-10 18:58:55 | [INFO]    | Shard 0 : Disconnected
+2020-08-10 18:58:55 | [INFO]    | Shard 0 : Reconnecting after 3876 ms...
+2020-08-10 18:58:59 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2020-08-10 18:58:59 | [INFO]    | Shard 0 : Received HELLO
+2020-08-10 18:59:02 | [WARNING] | Shard 0 : 4004 - Authentication failed.
+2020-08-10 18:59:02 | [INFO]    | Shard 0 : Disconnected
+2020-08-10 18:59:02 | [INFO]    | Shard 0 : Reconnecting after 7254 ms...
+2020-08-10 18:59:10 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2020-08-10 18:59:10 | [INFO]    | Shard 0 : Received HELLO
+2020-08-10 18:59:10 | [WARNING] | Shard 0 : 4004 - Authentication failed.
+2020-08-10 18:59:10 | [INFO]    | Shard 0 : Disconnected
+2020-08-10 18:59:10 | [INFO]    | Shard 0 : Reconnecting after 17354 ms...
+2020-08-10 18:59:27 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2020-08-10 18:59:27 | [INFO]    | Shard 0 : Received HELLO
+2020-08-10 18:59:28 | [WARNING] | Shard 0 : 4004 - Authentication failed.
+2020-08-10 18:59:28 | [INFO]    | Shard 0 : Disconnected
+2020-08-10 18:59:28 | [INFO]    | Shard 0 : Reconnecting after 30195 ms...
+2020-08-10 18:59:58 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2020-08-10 18:59:58 | [INFO]    | Shard 0 : Received HELLO
+2020-08-10 18:59:58 | [WARNING] | Shard 0 : 4004 - Authentication failed.
+2020-08-10 18:59:58 | [INFO]    | Shard 0 : Disconnected
+2020-08-10 18:59:58 | [INFO]    | Shard 0 : Reconnecting after 63810 ms...
+2020-08-10 19:01:02 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2020-08-10 19:01:02 | [INFO]    | Shard 0 : Received HELLO
+2020-08-10 19:01:02 | [WARNING] | Shard 0 : 4004 - Authentication failed.
+2020-08-10 19:01:02 | [INFO]    | Shard 0 : Disconnected
+2020-08-10 19:01:02 | [INFO]    | Shard 0 : Reconnecting after 60626 ms...
+2020-08-10 19:02:03 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2020-08-10 19:02:03 | [INFO]    | Shard 0 : Received HELLO
+2020-08-10 19:02:03 | [WARNING] | Shard 0 : 4004 - Authentication failed.
+2020-08-10 19:02:03 | [INFO]    | Shard 0 : Disconnected
+2020-08-10 19:02:03 | [INFO]    | Shard 0 : Reconnecting after 55442 ms...
+2020-08-10 19:02:59 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2020-08-10 19:02:59 | [INFO]    | Shard 0 : Received HELLO
+2020-08-10 19:02:59 | [WARNING] | Shard 0 : 4004 - Authentication failed.
+2020-08-10 19:02:59 | [INFO]    | Shard 0 : Disconnected
+2020-08-10 19:02:59 | [INFO]    | Shard 0 : Reconnecting after 62933 ms...
+2020-08-10 19:04:02 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2020-08-10 19:04:02 | [INFO]    | Shard 0 : Received HELLO
+2020-08-10 19:04:02 | [WARNING] | Shard 0 : 4004 - Authentication failed.
+2020-08-10 19:04:02 | [INFO]    | Shard 0 : Disconnected
+2020-08-10 19:04:02 | [INFO]    | Shard 0 : Reconnecting after 58252 ms...
+2020-08-10 19:05:01 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2020-08-10 19:05:01 | [INFO]    | Shard 0 : Received HELLO
+2020-08-10 19:05:01 | [WARNING] | Shard 0 : 4004 - Authentication failed.
+2020-08-10 19:05:01 | [INFO]    | Shard 0 : Disconnected
+2020-08-10 19:05:01 | [INFO]    | Shard 0 : Reconnecting after 61138 ms...
+2020-08-10 19:06:03 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2020-08-10 19:06:03 | [INFO]    | Shard 0 : Received HELLO
+2020-08-10 19:06:03 | [WARNING] | Shard 0 : 4004 - Authentication failed.
+2020-08-10 19:06:03 | [INFO]    | Shard 0 : Disconnected
+2020-08-10 19:06:03 | [INFO]    | Shard 0 : Reconnecting after 63963 ms...
+2020-08-10 19:07:07 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2020-08-10 19:07:07 | [INFO]    | Shard 0 : Received HELLO
+2020-08-10 19:07:07 | [WARNING] | Shard 0 : 4004 - Authentication failed.
+2020-08-10 19:07:07 | [INFO]    | Shard 0 : Disconnected
+2020-08-10 19:07:07 | [INFO]    | Shard 0 : Reconnecting after 56705 ms...
+2020-08-10 19:08:04 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2020-08-10 19:08:04 | [INFO]    | Shard 0 : Received HELLO
+2020-08-10 19:08:04 | [WARNING] | Shard 0 : 4004 - Authentication failed.
+2020-08-10 19:08:04 | [INFO]    | Shard 0 : Disconnected
+2020-08-10 19:08:04 | [INFO]    | Shard 0 : Reconnecting after 61674 ms...
+2020-08-10 19:09:06 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2020-08-10 19:09:06 | [INFO]    | Shard 0 : Received HELLO
+2020-08-10 19:09:06 | [WARNING] | Shard 0 : 4004 - Authentication failed.
+2020-08-10 19:09:06 | [INFO]    | Shard 0 : Disconnected
+2020-08-10 19:09:06 | [INFO]    | Shard 0 : Reconnecting after 64593 ms...
+2020-08-10 19:10:11 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2020-08-10 19:10:11 | [INFO]    | Shard 0 : Received HELLO
+2020-08-10 19:10:11 | [WARNING] | Shard 0 : 4004 - Authentication failed.
+2020-08-10 19:10:11 | [INFO]    | Shard 0 : Disconnected
+2020-08-10 19:10:11 | [INFO]    | Shard 0 : Reconnecting after 62653 ms...
+2020-08-10 19:11:14 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2020-08-10 19:11:14 | [INFO]    | Shard 0 : Received HELLO
+2020-08-10 19:11:14 | [WARNING] | Shard 0 : 4004 - Authentication failed.
+2020-08-10 19:11:14 | [INFO]    | Shard 0 : Disconnected
+2020-08-10 19:11:14 | [INFO]    | Shard 0 : Reconnecting after 58707 ms...
+2020-08-10 19:12:13 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2020-08-10 19:12:13 | [INFO]    | Shard 0 : Received HELLO
+2020-08-10 19:12:13 | [WARNING] | Shard 0 : 4004 - Authentication failed.
+2020-08-10 19:12:13 | [INFO]    | Shard 0 : Disconnected
+2020-08-10 19:12:13 | [INFO]    | Shard 0 : Reconnecting after 54619 ms...
+2020-08-10 19:13:08 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2020-08-10 19:13:08 | [INFO]    | Shard 0 : Received HELLO
+2020-08-10 19:13:08 | [WARNING] | Shard 0 : 4004 - Authentication failed.
+2020-08-10 19:13:08 | [INFO]    | Shard 0 : Disconnected
+2020-08-10 19:13:08 | [INFO]    | Shard 0 : Reconnecting after 64060 ms...
+2020-08-10 19:14:13 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2020-08-10 19:14:13 | [INFO]    | Shard 0 : Received HELLO
+2020-08-10 19:14:13 | [WARNING] | Shard 0 : 4004 - Authentication failed.
+2020-08-10 19:14:13 | [INFO]    | Shard 0 : Disconnected
+2020-08-10 19:14:13 | [INFO]    | Shard 0 : Reconnecting after 58091 ms...
+2020-08-10 19:15:11 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2020-08-10 19:15:11 | [INFO]    | Shard 0 : Received HELLO
+2020-08-10 19:15:11 | [WARNING] | Shard 0 : 4004 - Authentication failed.
+2020-08-10 19:15:11 | [INFO]    | Shard 0 : Disconnected
+2020-08-10 19:15:11 | [INFO]    | Shard 0 : Reconnecting after 63640 ms...
+2020-08-10 19:16:15 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2020-08-10 19:24:55 | [INFO]    | Discordia 2.8.3
+2020-08-10 19:24:55 | [INFO]    | Connecting to Discord...
+2020-08-10 19:24:55 | [ERROR]   | 401 - Unauthorized : GET https://discordapp.com/api/v7/users/@me
+2020-08-10 19:24:55 | [ERROR]   | Could not authenticate, check token: HTTP Error 0 : 401: Unauthorized
+2020-08-10 19:28:16 | [INFO]    | Discordia 2.8.3
+2020-08-10 19:28:16 | [INFO]    | Connecting to Discord...
+2020-08-10 19:28:16 | [INFO]    | Authenticated as 'B'#7189
+2020-08-10 19:28:16 | [INFO]    | Launching shard 0 (1 out of 1)...
+2020-08-10 19:28:16 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2020-08-10 19:28:16 | [INFO]    | Shard 0 : Received HELLO
+2020-08-10 19:28:17 | [INFO]    | Shard 0 : Received READY
+2020-08-10 22:05:55 | [WARNING] | Shard 0 : Discord has requested a reconnection
+2020-08-10 22:05:55 | [INFO]    | Shard 0 : Disconnected
+2020-08-10 22:05:55 | [INFO]    | Shard 0 : Reconnecting...
+2020-08-10 22:05:56 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2020-08-10 22:05:56 | [INFO]    | Shard 0 : Received HELLO
+2020-08-10 22:05:56 | [INFO]    | Shard 0 : Received RESUMED
+2020-08-11 01:10:58 | [WARNING] | Shard 0 : Discord has requested a reconnection
+2020-08-11 23:31:14 | [INFO]    | Discordia 2.8.3
+2020-08-11 23:31:14 | [INFO]    | Connecting to Discord...
+2020-08-11 23:31:14 | [INFO]    | Authenticated as 'B'#7189
+2020-08-11 23:31:14 | [INFO]    | Launching shard 0 (1 out of 1)...
+2020-08-11 23:31:14 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2020-08-11 23:31:14 | [INFO]    | Shard 0 : Received HELLO
+2020-08-11 23:31:14 | [INFO]    | Shard 0 : Received READY
+2020-08-11 23:33:37 | [WARNING] | Shard 0 : Unhandled gateway event: INVITE_CREATE
+2020-08-12 00:55:58 | [WARNING] | Shard 0 : Discord has requested a reconnection
+2020-08-12 00:55:59 | [INFO]    | Shard 0 : Disconnected
+2020-08-12 00:55:59 | [INFO]    | Shard 0 : Reconnecting...
+2020-08-12 00:55:59 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2020-08-12 00:55:59 | [INFO]    | Shard 0 : Received HELLO
+2020-08-12 00:55:59 | [INFO]    | Shard 0 : Received RESUMED
+2020-08-12 01:58:31 | [INFO]    | Discordia 2.8.3
+2020-08-12 01:58:31 | [INFO]    | Connecting to Discord...
+2020-08-12 01:58:31 | [INFO]    | Authenticated as 'B'#7189
+2020-08-12 01:58:31 | [INFO]    | Launching shard 0 (1 out of 1)...
+2020-08-12 01:58:31 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2020-08-12 01:58:31 | [INFO]    | Shard 0 : Received HELLO
+2020-08-12 01:58:32 | [INFO]    | Shard 0 : Received READY
+2020-08-12 02:00:26 | [INFO]    | Discordia 2.8.3
+2020-08-12 02:00:26 | [INFO]    | Connecting to Discord...
+2020-08-12 02:00:27 | [INFO]    | Authenticated as 'B'#7189
+2020-08-12 02:00:27 | [INFO]    | Launching shard 0 (1 out of 1)...
+2020-08-12 02:00:27 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2020-08-12 02:00:27 | [INFO]    | Shard 0 : Received HELLO
+2020-08-12 02:00:27 | [INFO]    | Shard 0 : Received READY
+2020-08-12 02:06:09 | [INFO]    | Discordia 2.8.3
+2020-08-12 02:06:09 | [INFO]    | Connecting to Discord...
+2020-08-12 02:06:10 | [INFO]    | Authenticated as 'B'#7189
+2020-08-12 02:06:10 | [INFO]    | Launching shard 0 (1 out of 1)...
+2020-08-12 02:06:10 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2020-08-12 02:06:10 | [INFO]    | Shard 0 : Received HELLO
+2020-08-12 02:06:10 | [INFO]    | Shard 0 : Received READY
+2020-08-12 02:08:16 | [INFO]    | Discordia 2.8.3
+2020-08-12 02:08:16 | [INFO]    | Connecting to Discord...
+2020-08-12 02:08:16 | [INFO]    | Authenticated as 'B'#7189
+2020-08-12 02:08:16 | [INFO]    | Launching shard 0 (1 out of 1)...
+2020-08-12 02:08:16 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2020-08-12 02:08:16 | [INFO]    | Shard 0 : Received HELLO
+2020-08-12 02:08:16 | [INFO]    | Shard 0 : Received READY
+2020-08-12 02:09:31 | [INFO]    | Discordia 2.8.3
+2020-08-12 02:09:31 | [INFO]    | Connecting to Discord...
+2020-08-12 02:09:32 | [INFO]    | Authenticated as 'B'#7189
+2020-08-12 02:09:32 | [INFO]    | Launching shard 0 (1 out of 1)...
+2020-08-12 02:09:32 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2020-08-12 02:09:32 | [INFO]    | Shard 0 : Received HELLO
+2020-08-12 02:09:32 | [INFO]    | Shard 0 : Received READY
+2020-08-12 02:11:36 | [INFO]    | Discordia 2.8.3
+2020-08-12 02:11:36 | [INFO]    | Connecting to Discord...
+2020-08-12 02:11:36 | [INFO]    | Authenticated as 'B'#7189
+2020-08-12 02:11:36 | [INFO]    | Launching shard 0 (1 out of 1)...
+2020-08-12 02:11:36 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2020-08-12 02:11:36 | [INFO]    | Shard 0 : Received HELLO
+2020-08-12 02:11:36 | [INFO]    | Shard 0 : Received READY
+2020-08-12 02:14:59 | [INFO]    | Discordia 2.8.3
+2020-08-12 02:14:59 | [INFO]    | Connecting to Discord...
+2020-08-12 02:15:00 | [INFO]    | Authenticated as 'B'#7189
+2020-08-12 02:15:00 | [INFO]    | Launching shard 0 (1 out of 1)...
+2020-08-12 02:15:00 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2020-08-12 02:15:00 | [INFO]    | Shard 0 : Received HELLO
+2020-08-12 02:15:00 | [INFO]    | Shard 0 : Received READY
+2020-08-12 02:15:30 | [INFO]    | Discordia 2.8.3
+2020-08-12 02:15:30 | [INFO]    | Connecting to Discord...
+2020-08-12 02:15:30 | [INFO]    | Authenticated as 'B'#7189
+2020-08-12 02:15:30 | [INFO]    | Launching shard 0 (1 out of 1)...
+2020-08-12 02:15:30 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2020-08-12 02:15:30 | [INFO]    | Shard 0 : Received HELLO
+2020-08-12 02:15:31 | [INFO]    | Shard 0 : Received READY
+2020-08-12 02:17:00 | [INFO]    | Discordia 2.8.3
+2020-08-12 02:17:00 | [INFO]    | Connecting to Discord...
+2020-08-12 02:17:01 | [INFO]    | Authenticated as 'B'#7189
+2020-08-12 02:17:01 | [INFO]    | Launching shard 0 (1 out of 1)...
+2020-08-12 02:17:01 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2020-08-12 02:17:01 | [INFO]    | Shard 0 : Received HELLO
+2020-08-12 02:17:01 | [INFO]    | Shard 0 : Received READY
+2020-08-12 02:18:06 | [INFO]    | Discordia 2.8.3
+2020-08-12 02:18:06 | [INFO]    | Connecting to Discord...
+2020-08-12 02:18:06 | [INFO]    | Authenticated as 'B'#7189
+2020-08-12 02:18:06 | [INFO]    | Launching shard 0 (1 out of 1)...
+2020-08-12 02:18:06 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2020-08-12 02:18:06 | [INFO]    | Shard 0 : Received HELLO
+2020-08-12 02:18:06 | [INFO]    | Shard 0 : Received READY
+2020-08-12 02:21:08 | [INFO]    | Discordia 2.8.3
+2020-08-12 02:21:08 | [INFO]    | Connecting to Discord...
+2020-08-12 02:21:08 | [INFO]    | Authenticated as 'B'#7189
+2020-08-12 02:21:08 | [INFO]    | Launching shard 0 (1 out of 1)...
+2020-08-12 02:21:08 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2020-08-12 02:21:08 | [INFO]    | Shard 0 : Received HELLO
+2020-08-12 02:21:09 | [INFO]    | Shard 0 : Received READY
+2020-08-12 02:21:41 | [INFO]    | Discordia 2.8.3
+2020-08-12 02:21:41 | [INFO]    | Connecting to Discord...
+2020-08-12 02:21:41 | [INFO]    | Authenticated as 'B'#7189
+2020-08-12 02:21:41 | [INFO]    | Launching shard 0 (1 out of 1)...
+2020-08-12 02:21:42 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2020-08-12 02:21:42 | [INFO]    | Shard 0 : Received HELLO
+2020-08-12 02:21:42 | [INFO]    | Shard 0 : Received READY
+2020-08-12 02:22:21 | [INFO]    | Discordia 2.8.3
+2020-08-12 02:22:21 | [INFO]    | Connecting to Discord...
+2020-08-12 02:22:21 | [INFO]    | Authenticated as 'B'#7189
+2020-08-12 02:22:21 | [INFO]    | Launching shard 0 (1 out of 1)...
+2020-08-12 02:22:21 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2020-08-12 02:22:21 | [INFO]    | Shard 0 : Received HELLO
+2020-08-12 02:22:22 | [INFO]    | Shard 0 : Received READY
+2020-08-12 02:23:20 | [INFO]    | Discordia 2.8.3
+2020-08-12 02:23:20 | [INFO]    | Connecting to Discord...
+2020-08-12 02:23:20 | [INFO]    | Authenticated as 'B'#7189
+2020-08-12 02:23:20 | [INFO]    | Launching shard 0 (1 out of 1)...
+2020-08-12 02:23:21 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2020-08-12 02:23:21 | [INFO]    | Shard 0 : Received HELLO
+2020-08-12 02:23:21 | [INFO]    | Shard 0 : Received READY
+2020-08-12 02:26:55 | [INFO]    | Discordia 2.8.3
+2020-08-12 02:26:55 | [INFO]    | Connecting to Discord...
+2020-08-12 02:26:56 | [INFO]    | Authenticated as 'B'#7189
+2020-08-12 02:26:56 | [INFO]    | Launching shard 0 (1 out of 1)...
+2020-08-12 02:26:56 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2020-08-12 02:26:56 | [INFO]    | Shard 0 : Received HELLO
+2020-08-12 02:26:56 | [INFO]    | Shard 0 : Received READY
+2020-08-12 02:27:34 | [INFO]    | Discordia 2.8.3
+2020-08-12 02:27:34 | [INFO]    | Connecting to Discord...
+2020-08-12 02:27:35 | [INFO]    | Authenticated as 'B'#7189
+2020-08-12 02:27:35 | [INFO]    | Launching shard 0 (1 out of 1)...
+2020-08-12 02:27:35 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2020-08-12 02:27:35 | [INFO]    | Shard 0 : Received HELLO
+2020-08-12 02:27:35 | [INFO]    | Shard 0 : Received READY
+2020-08-12 02:27:51 | [ERROR]   | 404 - Not Found : DELETE https://discordapp.com/api/v7/channels/742802969086656653/messages/742902107497299978
+2020-08-12 02:30:50 | [ERROR]   | 404 - Not Found : DELETE https://discordapp.com/api/v7/channels/742802946722365522/messages/742902860089655387
+2020-08-12 02:30:55 | [ERROR]   | 404 - Not Found : DELETE https://discordapp.com/api/v7/channels/742802946722365522/messages/742902860089655387
+2020-08-12 02:31:01 | [ERROR]   | 404 - Not Found : DELETE https://discordapp.com/api/v7/channels/742802946722365522/messages/742902860089655387
+2020-08-12 02:31:44 | [ERROR]   | 404 - Not Found : DELETE https://discordapp.com/api/v7/channels/742802946722365522/messages/742903086166704158
+2020-08-12 02:31:49 | [ERROR]   | 404 - Not Found : DELETE https://discordapp.com/api/v7/channels/742802946722365522/messages/742903086166704158
+2020-08-12 02:31:55 | [ERROR]   | 404 - Not Found : DELETE https://discordapp.com/api/v7/channels/742802946722365522/messages/742903086166704158
+2020-08-12 02:32:00 | [ERROR]   | 404 - Not Found : DELETE https://discordapp.com/api/v7/channels/742802946722365522/messages/742903086166704158
+2020-08-12 02:32:41 | [ERROR]   | 404 - Not Found : DELETE https://discordapp.com/api/v7/channels/742802946722365522/messages/742903325405610004
+2020-08-12 02:32:46 | [ERROR]   | 404 - Not Found : DELETE https://discordapp.com/api/v7/channels/742802946722365522/messages/742903325405610004
+2020-08-12 02:32:52 | [ERROR]   | 404 - Not Found : DELETE https://discordapp.com/api/v7/channels/742802946722365522/messages/742903325405610004
+2020-08-12 02:32:57 | [ERROR]   | 404 - Not Found : DELETE https://discordapp.com/api/v7/channels/742802946722365522/messages/742903325405610004
+2020-08-12 02:33:02 | [ERROR]   | 404 - Not Found : DELETE https://discordapp.com/api/v7/channels/742802946722365522/messages/742903325405610004
+2020-08-12 02:33:28 | [ERROR]   | 404 - Not Found : DELETE https://discordapp.com/api/v7/channels/742802946722365522/messages/742903524148510810
+2020-08-12 02:33:34 | [ERROR]   | 404 - Not Found : DELETE https://discordapp.com/api/v7/channels/742802946722365522/messages/742903524148510810
+2020-08-12 02:33:39 | [ERROR]   | 404 - Not Found : DELETE https://discordapp.com/api/v7/channels/742802946722365522/messages/742903524148510810
+2020-08-12 02:33:44 | [ERROR]   | 404 - Not Found : DELETE https://discordapp.com/api/v7/channels/742802946722365522/messages/742903524148510810
+2020-08-12 02:33:50 | [ERROR]   | 404 - Not Found : DELETE https://discordapp.com/api/v7/channels/742802946722365522/messages/742903524148510810
+2020-08-12 02:33:55 | [ERROR]   | 404 - Not Found : DELETE https://discordapp.com/api/v7/channels/742802946722365522/messages/742903524148510810
+2020-08-12 02:34:09 | [ERROR]   | 404 - Not Found : DELETE https://discordapp.com/api/v7/channels/742802946722365522/messages/742903696110649344
+2020-08-12 02:34:15 | [ERROR]   | 404 - Not Found : DELETE https://discordapp.com/api/v7/channels/742802946722365522/messages/742903696110649344
+2020-08-12 02:34:20 | [ERROR]   | 404 - Not Found : DELETE https://discordapp.com/api/v7/channels/742802946722365522/messages/742903696110649344
+2020-08-12 02:34:25 | [ERROR]   | 404 - Not Found : DELETE https://discordapp.com/api/v7/channels/742802946722365522/messages/742903696110649344
+2020-08-12 02:34:31 | [ERROR]   | 404 - Not Found : DELETE https://discordapp.com/api/v7/channels/742802946722365522/messages/742903696110649344
+2020-08-12 02:34:36 | [ERROR]   | 404 - Not Found : DELETE https://discordapp.com/api/v7/channels/742802946722365522/messages/742903696110649344
+2020-08-12 02:34:42 | [ERROR]   | 404 - Not Found : DELETE https://discordapp.com/api/v7/channels/742802946722365522/messages/742903696110649344
+2020-08-12 02:35:03 | [ERROR]   | 404 - Not Found : DELETE https://discordapp.com/api/v7/channels/742802946722365522/messages/742903919285370912
+2020-08-12 02:35:08 | [ERROR]   | 404 - Not Found : DELETE https://discordapp.com/api/v7/channels/742802946722365522/messages/742903919285370912
+2020-08-12 02:35:13 | [ERROR]   | 404 - Not Found : DELETE https://discordapp.com/api/v7/channels/742802946722365522/messages/742903919285370912
+2020-08-12 02:35:19 | [ERROR]   | 404 - Not Found : DELETE https://discordapp.com/api/v7/channels/742802946722365522/messages/742903919285370912
+2020-08-12 02:35:24 | [ERROR]   | 404 - Not Found : DELETE https://discordapp.com/api/v7/channels/742802946722365522/messages/742903919285370912
+2020-08-12 02:35:29 | [ERROR]   | 404 - Not Found : DELETE https://discordapp.com/api/v7/channels/742802946722365522/messages/742903919285370912
+2020-08-12 02:35:35 | [ERROR]   | 404 - Not Found : DELETE https://discordapp.com/api/v7/channels/742802946722365522/messages/742903919285370912
+2020-08-12 02:35:40 | [ERROR]   | 404 - Not Found : DELETE https://discordapp.com/api/v7/channels/742802946722365522/messages/742903919285370912
+2020-08-12 02:36:14 | [ERROR]   | 404 - Not Found : DELETE https://discordapp.com/api/v7/channels/742802946722365522/messages/742904220373614634
+2020-08-12 02:36:20 | [ERROR]   | 404 - Not Found : DELETE https://discordapp.com/api/v7/channels/742802946722365522/messages/742904220373614634
+2020-08-12 02:36:25 | [ERROR]   | 404 - Not Found : DELETE https://discordapp.com/api/v7/channels/742802946722365522/messages/742904220373614634
+2020-08-12 02:36:30 | [ERROR]   | 404 - Not Found : DELETE https://discordapp.com/api/v7/channels/742802946722365522/messages/742904220373614634
+2020-08-12 02:36:36 | [ERROR]   | 404 - Not Found : DELETE https://discordapp.com/api/v7/channels/742802946722365522/messages/742904220373614634
+2020-08-12 02:36:41 | [ERROR]   | 404 - Not Found : DELETE https://discordapp.com/api/v7/channels/742802946722365522/messages/742904220373614634
+2020-08-12 02:36:47 | [ERROR]   | 404 - Not Found : DELETE https://discordapp.com/api/v7/channels/742802946722365522/messages/742904220373614634
+2020-08-12 02:36:52 | [ERROR]   | 404 - Not Found : DELETE https://discordapp.com/api/v7/channels/742802946722365522/messages/742904220373614634
+2020-08-12 02:36:57 | [ERROR]   | 404 - Not Found : DELETE https://discordapp.com/api/v7/channels/742802946722365522/messages/742904220373614634
+2020-08-12 02:37:28 | [ERROR]   | 404 - Not Found : DELETE https://discordapp.com/api/v7/channels/742802948748345475/messages/742904527644262471
+2020-08-12 02:37:33 | [ERROR]   | 404 - Not Found : DELETE https://discordapp.com/api/v7/channels/742802948748345475/messages/742904527644262471
+2020-08-12 02:37:38 | [ERROR]   | 404 - Not Found : DELETE https://discordapp.com/api/v7/channels/742802948748345475/messages/742904527644262471
+2020-08-12 02:37:44 | [ERROR]   | 404 - Not Found : DELETE https://discordapp.com/api/v7/channels/742802948748345475/messages/742904527644262471
+2020-08-12 02:37:49 | [ERROR]   | 404 - Not Found : DELETE https://discordapp.com/api/v7/channels/742802948748345475/messages/742904527644262471
+2020-08-12 02:37:55 | [ERROR]   | 404 - Not Found : DELETE https://discordapp.com/api/v7/channels/742802948748345475/messages/742904527644262471
+2020-08-12 02:38:00 | [ERROR]   | 404 - Not Found : DELETE https://discordapp.com/api/v7/channels/742802948748345475/messages/742904527644262471
+2020-08-12 02:38:05 | [ERROR]   | 404 - Not Found : DELETE https://discordapp.com/api/v7/channels/742802948748345475/messages/742904527644262471
+2020-08-12 02:38:11 | [ERROR]   | 404 - Not Found : DELETE https://discordapp.com/api/v7/channels/742802948748345475/messages/742904527644262471
+2020-08-12 02:38:16 | [ERROR]   | 404 - Not Found : DELETE https://discordapp.com/api/v7/channels/742802948748345475/messages/742904527644262471
+2020-08-12 02:55:35 | [WARNING] | Shard 0 : Discord has requested a reconnection
+2020-08-12 02:55:35 | [INFO]    | Shard 0 : Disconnected
+2020-08-12 02:55:35 | [INFO]    | Shard 0 : Reconnecting...
+2020-08-12 02:55:35 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2020-08-12 02:55:35 | [INFO]    | Shard 0 : Received HELLO
+2020-08-12 02:55:35 | [INFO]    | Shard 0 : Received RESUMED
+2020-08-12 03:32:31 | [ERROR]   | 404 - Not Found : DELETE https://discordapp.com/api/v7/channels/742802946722365522/messages/742918380918669354
+2020-08-12 03:32:36 | [ERROR]   | 404 - Not Found : DELETE https://discordapp.com/api/v7/channels/742802946722365522/messages/742918380918669354
+2020-08-12 03:32:41 | [ERROR]   | 404 - Not Found : DELETE https://discordapp.com/api/v7/channels/742802946722365522/messages/742918380918669354
+2020-08-12 03:32:47 | [ERROR]   | 404 - Not Found : DELETE https://discordapp.com/api/v7/channels/742802946722365522/messages/742918380918669354
+2020-08-12 03:32:52 | [ERROR]   | 404 - Not Found : DELETE https://discordapp.com/api/v7/channels/742802946722365522/messages/742918380918669354
+2020-08-12 03:32:57 | [ERROR]   | 404 - Not Found : DELETE https://discordapp.com/api/v7/channels/742802946722365522/messages/742918380918669354
+2020-08-12 03:33:03 | [ERROR]   | 404 - Not Found : DELETE https://discordapp.com/api/v7/channels/742802946722365522/messages/742918380918669354
+2020-08-12 03:33:08 | [ERROR]   | 404 - Not Found : DELETE https://discordapp.com/api/v7/channels/742802946722365522/messages/742918380918669354
+2020-08-12 03:33:14 | [ERROR]   | 404 - Not Found : DELETE https://discordapp.com/api/v7/channels/742802946722365522/messages/742918380918669354
+2020-08-12 03:33:19 | [ERROR]   | 404 - Not Found : DELETE https://discordapp.com/api/v7/channels/742802946722365522/messages/742918380918669354
+2020-08-12 03:33:24 | [ERROR]   | 404 - Not Found : DELETE https://discordapp.com/api/v7/channels/742802946722365522/messages/742918380918669354
+2020-08-12 03:33:29 | [ERROR]   | 404 - Not Found : DELETE https://discordapp.com/api/v7/channels/742802946722365522/messages/742918380918669354
+2020-08-12 03:56:00 | [WARNING] | Shard 0 : Unhandled gateway event: INVITE_CREATE
+2020-08-12 04:09:53 | [ERROR]   | 404 - Not Found : DELETE https://discordapp.com/api/v7/channels/742802948748345475/messages/742927785533767740
+2020-08-12 04:10:15 | [INFO]    | Discordia 2.8.3
+2020-08-12 04:10:15 | [INFO]    | Connecting to Discord...
+2020-08-12 04:10:15 | [INFO]    | Authenticated as 'B'#7189
+2020-08-12 04:10:16 | [INFO]    | Launching shard 0 (1 out of 1)...
+2020-08-12 04:10:16 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2020-08-12 04:10:16 | [INFO]    | Shard 0 : Received HELLO
+2020-08-12 04:10:16 | [INFO]    | Shard 0 : Received READY
+2020-08-12 12:18:17 | [INFO]    | Discordia 2.8.3
+2020-08-12 12:18:17 | [INFO]    | Connecting to Discord...
+2020-08-12 12:18:18 | [INFO]    | Authenticated as 'B'#7189
+2020-08-12 12:18:18 | [INFO]    | Launching shard 0 (1 out of 1)...
+2020-08-12 12:18:18 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2020-08-12 12:18:18 | [INFO]    | Shard 0 : Received HELLO
+2020-08-12 12:18:18 | [INFO]    | Shard 0 : Received READY
+2020-08-12 12:18:43 | [ERROR]   | 404 - Not Found : DELETE https://discordapp.com/api/v7/channels/742802946722365522/messages/743050805732704296
+2020-08-12 12:19:24 | [ERROR]   | 404 - Not Found : DELETE https://discordapp.com/api/v7/channels/742802946722365522/messages/743050978445492224
+2020-08-12 12:19:29 | [ERROR]   | 404 - Not Found : DELETE https://discordapp.com/api/v7/channels/742802946722365522/messages/743050978445492224
+2020-08-12 12:28:43 | [ERROR]   | 404 - Not Found : DELETE https://discordapp.com/api/v7/channels/742802946722365522/messages/743053321878634497
+2020-08-12 12:28:48 | [ERROR]   | 404 - Not Found : DELETE https://discordapp.com/api/v7/channels/742802946722365522/messages/743053321878634497
+2020-08-12 12:28:53 | [ERROR]   | 404 - Not Found : DELETE https://discordapp.com/api/v7/channels/742802946722365522/messages/743053321878634497
+2020-08-12 12:29:12 | [ERROR]   | 404 - Not Found : DELETE https://discordapp.com/api/v7/channels/742802946722365522/messages/743053444742643744
+2020-08-12 12:29:17 | [ERROR]   | 404 - Not Found : DELETE https://discordapp.com/api/v7/channels/742802946722365522/messages/743053444742643744
+2020-08-12 12:29:23 | [ERROR]   | 404 - Not Found : DELETE https://discordapp.com/api/v7/channels/742802946722365522/messages/743053444742643744
+2020-08-12 12:29:28 | [ERROR]   | 404 - Not Found : DELETE https://discordapp.com/api/v7/channels/742802946722365522/messages/743053444742643744
+2020-08-12 12:29:41 | [ERROR]   | 404 - Not Found : DELETE https://discordapp.com/api/v7/channels/742802946722365522/messages/743053564997271602
+2020-08-12 12:29:46 | [ERROR]   | 404 - Not Found : DELETE https://discordapp.com/api/v7/channels/742802946722365522/messages/743053564997271602
+2020-08-12 12:29:51 | [ERROR]   | 404 - Not Found : DELETE https://discordapp.com/api/v7/channels/742802946722365522/messages/743053564997271602
+2020-08-12 12:29:57 | [ERROR]   | 404 - Not Found : DELETE https://discordapp.com/api/v7/channels/742802946722365522/messages/743053564997271602
+2020-08-12 12:30:02 | [ERROR]   | 404 - Not Found : DELETE https://discordapp.com/api/v7/channels/742802946722365522/messages/743053564997271602
+2020-08-12 12:30:24 | [ERROR]   | 404 - Not Found : DELETE https://discordapp.com/api/v7/channels/742802946722365522/messages/743053748032765992
+2020-08-12 12:30:30 | [ERROR]   | 404 - Not Found : DELETE https://discordapp.com/api/v7/channels/742802946722365522/messages/743053748032765992
+2020-08-12 12:30:35 | [ERROR]   | 404 - Not Found : DELETE https://discordapp.com/api/v7/channels/742802946722365522/messages/743053748032765992
+2020-08-12 12:30:41 | [ERROR]   | 404 - Not Found : DELETE https://discordapp.com/api/v7/channels/742802946722365522/messages/743053748032765992
+2020-08-12 12:30:46 | [ERROR]   | 404 - Not Found : DELETE https://discordapp.com/api/v7/channels/742802946722365522/messages/743053748032765992
+2020-08-12 12:30:51 | [ERROR]   | 404 - Not Found : DELETE https://discordapp.com/api/v7/channels/742802946722365522/messages/743053748032765992
+2020-08-12 12:31:10 | [ERROR]   | 404 - Not Found : DELETE https://discordapp.com/api/v7/channels/742802946722365522/messages/743053939183845376
+2020-08-12 12:31:15 | [ERROR]   | 404 - Not Found : DELETE https://discordapp.com/api/v7/channels/742802946722365522/messages/743053939183845376
+2020-08-12 12:31:21 | [ERROR]   | 404 - Not Found : DELETE https://discordapp.com/api/v7/channels/742802946722365522/messages/743053939183845376
+2020-08-12 12:31:26 | [ERROR]   | 404 - Not Found : DELETE https://discordapp.com/api/v7/channels/742802946722365522/messages/743053939183845376
+2020-08-12 12:31:31 | [ERROR]   | 404 - Not Found : DELETE https://discordapp.com/api/v7/channels/742802946722365522/messages/743053939183845376
+2020-08-12 12:31:37 | [ERROR]   | 404 - Not Found : DELETE https://discordapp.com/api/v7/channels/742802946722365522/messages/743053939183845376
+2020-08-12 12:31:42 | [ERROR]   | 404 - Not Found : DELETE https://discordapp.com/api/v7/channels/742802946722365522/messages/743053939183845376
+2020-08-12 12:31:56 | [ERROR]   | 404 - Not Found : DELETE https://discordapp.com/api/v7/channels/742802946722365522/messages/743054132356710411
+2020-08-12 12:32:01 | [ERROR]   | 404 - Not Found : DELETE https://discordapp.com/api/v7/channels/742802946722365522/messages/743054132356710411
+2020-08-12 12:32:07 | [ERROR]   | 404 - Not Found : DELETE https://discordapp.com/api/v7/channels/742802946722365522/messages/743054132356710411
+2020-08-12 12:32:12 | [ERROR]   | 404 - Not Found : DELETE https://discordapp.com/api/v7/channels/742802946722365522/messages/743054132356710411
+2020-08-12 12:32:17 | [ERROR]   | 404 - Not Found : DELETE https://discordapp.com/api/v7/channels/742802946722365522/messages/743054132356710411
+2020-08-12 12:32:23 | [ERROR]   | 404 - Not Found : DELETE https://discordapp.com/api/v7/channels/742802946722365522/messages/743054132356710411
+2020-08-12 12:32:28 | [ERROR]   | 404 - Not Found : DELETE https://discordapp.com/api/v7/channels/742802946722365522/messages/743054132356710411
+2020-08-12 12:32:34 | [ERROR]   | 404 - Not Found : DELETE https://discordapp.com/api/v7/channels/742802946722365522/messages/743054132356710411
+2020-08-12 12:37:09 | [INFO]    | Discordia 2.8.3
+2020-08-12 12:37:09 | [INFO]    | Connecting to Discord...
+2020-08-12 12:37:09 | [INFO]    | Authenticated as 'B'#7189
+2020-08-12 12:37:09 | [INFO]    | Launching shard 0 (1 out of 1)...
+2020-08-12 12:37:09 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2020-08-12 12:37:09 | [INFO]    | Shard 0 : Received HELLO
+2020-08-12 12:37:09 | [INFO]    | Shard 0 : Received READY
+2020-08-12 12:43:18 | [INFO]    | Discordia 2.8.3
+2020-08-12 12:43:18 | [INFO]    | Connecting to Discord...
+2020-08-12 12:43:18 | [INFO]    | Authenticated as 'B'#7189
+2020-08-12 12:43:18 | [INFO]    | Launching shard 0 (1 out of 1)...
+2020-08-12 12:43:18 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2020-08-12 12:43:18 | [INFO]    | Shard 0 : Received HELLO
+2020-08-12 12:43:19 | [INFO]    | Shard 0 : Received READY
+2020-08-12 12:44:34 | [INFO]    | Discordia 2.8.3
+2020-08-12 12:44:34 | [INFO]    | Connecting to Discord...
+2020-08-12 12:44:34 | [INFO]    | Authenticated as 'B'#7189
+2020-08-12 12:44:34 | [INFO]    | Launching shard 0 (1 out of 1)...
+2020-08-12 12:44:35 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2020-08-12 12:44:35 | [INFO]    | Shard 0 : Received HELLO
+2020-08-12 12:44:35 | [INFO]    | Shard 0 : Received READY
+2020-08-12 12:47:10 | [INFO]    | Discordia 2.8.3
+2020-08-12 12:47:10 | [INFO]    | Connecting to Discord...
+2020-08-12 12:47:11 | [INFO]    | Authenticated as 'B'#7189
+2020-08-12 12:47:11 | [INFO]    | Launching shard 0 (1 out of 1)...
+2020-08-12 12:47:11 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2020-08-12 12:47:11 | [INFO]    | Shard 0 : Received HELLO
+2020-08-12 12:47:11 | [INFO]    | Shard 0 : Received READY
+2020-08-12 14:45:19 | [ERROR]   | 400 - Bad Request : POST https://discordapp.com/api/v7/channels/743063452859367424/messages
+2020-08-12 14:45:53 | [ERROR]   | 400 - Bad Request : POST https://discordapp.com/api/v7/channels/743063452859367424/messages
+2020-08-12 16:11:35 | [WARNING] | Shard 0 : Discord has requested a reconnection
+2020-08-12 16:11:35 | [INFO]    | Shard 0 : Disconnected
+2020-08-12 16:11:35 | [INFO]    | Shard 0 : Reconnecting...
+2020-08-12 16:11:35 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2020-08-12 16:11:35 | [INFO]    | Shard 0 : Received HELLO
+2020-08-12 16:11:35 | [INFO]    | Shard 0 : Received RESUMED
+2020-08-12 17:28:48 | [WARNING] | Shard 0 : Unhandled gateway event: INVITE_CREATE
+2020-08-12 17:29:03 | [WARNING] | Shard 0 : Unhandled gateway event: INVITE_CREATE
+2020-08-12 17:51:02 | [INFO]    | Shard 0 : Disconnected
+2020-08-12 17:51:02 | [INFO]    | Shard 0 : Reconnecting after 987 ms...
+2020-08-12 17:51:03 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2020-08-12 17:51:03 | [INFO]    | Shard 0 : Received HELLO
+2020-08-12 17:51:04 | [INFO]    | Shard 0 : Received RESUMED
+2020-08-12 18:15:19 | [INFO]    | Shard 0 : Disconnected
+2020-08-12 18:15:19 | [INFO]    | Shard 0 : Reconnecting after 1010 ms...
+2020-08-12 18:15:20 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2020-08-12 18:15:20 | [INFO]    | Shard 0 : Received HELLO
+2020-08-12 18:15:20 | [INFO]    | Shard 0 : Received RESUMED
+2020-08-12 21:36:16 | [WARNING] | Shard 0 : Discord has requested a reconnection
+2020-08-12 21:36:16 | [INFO]    | Shard 0 : Disconnected
+2020-08-12 21:36:16 | [INFO]    | Shard 0 : Reconnecting...
+2020-08-12 21:36:16 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2020-08-12 21:36:16 | [INFO]    | Shard 0 : Received HELLO
+2020-08-12 21:36:16 | [INFO]    | Shard 0 : Received RESUMED
+2020-08-12 22:57:10 | [WARNING] | Shard 0 : Discord has requested a reconnection
+2020-08-12 22:57:10 | [INFO]    | Shard 0 : Disconnected
+2020-08-12 22:57:10 | [INFO]    | Shard 0 : Reconnecting...
+2020-08-12 22:57:10 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2020-08-12 22:57:10 | [INFO]    | Shard 0 : Received HELLO
+2020-08-12 22:57:10 | [INFO]    | Shard 0 : Received RESUMED
+2020-08-13 01:41:47 | [WARNING] | Shard 0 : Discord has requested a reconnection
+2020-08-13 01:41:47 | [INFO]    | Shard 0 : Disconnected
+2020-08-13 01:41:47 | [INFO]    | Shard 0 : Reconnecting...
+2020-08-13 01:41:47 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2020-08-13 01:41:47 | [INFO]    | Shard 0 : Received HELLO
+2020-08-13 01:41:47 | [INFO]    | Shard 0 : Received RESUMED
+2020-08-13 03:12:47 | [INFO]    | Shard 0 : Disconnected
+2020-08-13 03:12:47 | [INFO]    | Shard 0 : Reconnecting after 962 ms...
+2020-08-13 03:12:48 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2020-08-13 03:12:48 | [INFO]    | Shard 0 : Received HELLO
+2020-08-13 03:12:48 | [INFO]    | Shard 0 : Received RESUMED
+2020-08-13 05:02:46 | [WARNING] | Shard 0 : Discord has requested a reconnection
+2020-08-13 05:02:46 | [INFO]    | Shard 0 : Disconnected
+2020-08-13 05:02:46 | [INFO]    | Shard 0 : Reconnecting...
+2020-08-13 05:02:47 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2020-08-13 05:02:47 | [INFO]    | Shard 0 : Received HELLO
+2020-08-13 05:02:47 | [INFO]    | Shard 0 : Received RESUMED
+2020-08-13 16:15:54 | [INFO]    | Discordia 2.8.3
+2020-08-13 16:15:54 | [INFO]    | Connecting to Discord...
+2020-08-13 16:15:54 | [INFO]    | Authenticated as 'B'#7189
+2020-08-13 16:15:54 | [INFO]    | Launching shard 0 (1 out of 1)...
+2020-08-13 16:15:55 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2020-08-13 16:15:55 | [INFO]    | Shard 0 : Received HELLO
+2020-08-13 16:15:55 | [INFO]    | Shard 0 : Received READY
+2020-08-13 16:59:38 | [WARNING] | Shard 0 : Discord has requested a reconnection
+2020-08-13 16:59:38 | [INFO]    | Shard 0 : Disconnected
+2020-08-13 16:59:38 | [INFO]    | Shard 0 : Reconnecting...
+2020-08-13 16:59:39 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2020-08-13 16:59:39 | [INFO]    | Shard 0 : Received HELLO
+2020-08-13 16:59:39 | [INFO]    | Shard 0 : Received RESUMED
+2020-08-13 17:27:25 | [WARNING] | Shard 0 : Discord has requested a reconnection
+2020-08-13 17:27:25 | [INFO]    | Shard 0 : Disconnected
+2020-08-13 17:27:25 | [INFO]    | Shard 0 : Reconnecting...
+2020-08-13 17:27:25 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2020-08-13 17:27:25 | [INFO]    | Shard 0 : Received HELLO
+2020-08-13 17:27:25 | [INFO]    | Shard 0 : Received RESUMED
+2020-08-13 18:31:08 | [WARNING] | Shard 0 : Discord has requested a reconnection
+2020-08-13 18:31:08 | [INFO]    | Shard 0 : Disconnected
+2020-08-13 18:31:08 | [INFO]    | Shard 0 : Reconnecting...
+2020-08-13 18:31:08 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2020-08-13 18:31:08 | [INFO]    | Shard 0 : Received HELLO
+2020-08-13 18:31:09 | [INFO]    | Shard 0 : Received RESUMED
+2020-08-13 21:30:02 | [WARNING] | Shard 0 : Discord has requested a reconnection
+2020-08-13 21:30:02 | [INFO]    | Shard 0 : Disconnected
+2020-08-13 21:30:02 | [INFO]    | Shard 0 : Reconnecting...
+2020-08-13 21:30:02 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2020-08-13 21:30:02 | [INFO]    | Shard 0 : Received HELLO
+2020-08-13 21:30:02 | [INFO]    | Shard 0 : Received RESUMED
+2020-08-13 23:56:29 | [WARNING] | Shard 0 : Discord has requested a reconnection
+2020-08-13 23:56:29 | [INFO]    | Shard 0 : Disconnected
+2020-08-13 23:56:29 | [INFO]    | Shard 0 : Reconnecting...
+2020-08-13 23:56:29 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2020-08-13 23:56:29 | [INFO]    | Shard 0 : Received HELLO
+2020-08-13 23:56:29 | [INFO]    | Shard 0 : Received RESUMED
+2020-08-15 00:56:25 | [INFO]    | Discordia 2.8.3
+2020-08-15 00:56:25 | [INFO]    | Connecting to Discord...
+2020-08-15 00:56:25 | [INFO]    | Authenticated as 'B'#7189
+2020-08-15 00:56:26 | [INFO]    | Launching shard 0 (1 out of 1)...
+2020-08-15 00:56:26 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2020-08-15 00:56:26 | [INFO]    | Shard 0 : Received HELLO
+2020-08-15 00:56:26 | [INFO]    | Shard 0 : Received READY
+2020-08-15 04:27:31 | [WARNING] | Shard 0 : Discord has requested a reconnection
+2020-08-16 00:25:50 | [INFO]    | Discordia 2.8.3
+2020-08-16 00:25:50 | [INFO]    | Connecting to Discord...
+2020-08-16 00:25:50 | [INFO]    | Authenticated as 'B'#7189
+2020-08-16 00:25:50 | [INFO]    | Launching shard 0 (1 out of 1)...
+2020-08-16 00:25:51 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2020-08-16 00:25:51 | [INFO]    | Shard 0 : Received HELLO
+2020-08-16 00:25:51 | [INFO]    | Shard 0 : Received READY
+2020-08-16 00:39:11 | [INFO]    | Discordia 2.8.3
+2020-08-16 00:39:11 | [INFO]    | Connecting to Discord...
+2020-08-16 00:39:11 | [INFO]    | Authenticated as 'B'#7189
+2020-08-16 00:39:11 | [INFO]    | Launching shard 0 (1 out of 1)...
+2020-08-16 00:39:11 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2020-08-16 00:39:11 | [INFO]    | Shard 0 : Received HELLO
+2020-08-16 00:39:11 | [INFO]    | Shard 0 : Received READY
+2020-08-16 00:44:51 | [INFO]    | Discordia 2.8.3
+2020-08-16 00:44:51 | [INFO]    | Connecting to Discord...
+2020-08-16 00:44:51 | [INFO]    | Authenticated as 'B'#7189
+2020-08-16 00:44:51 | [INFO]    | Launching shard 0 (1 out of 1)...
+2020-08-16 00:44:51 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2020-08-16 00:44:51 | [INFO]    | Shard 0 : Received HELLO
+2020-08-16 00:44:51 | [INFO]    | Shard 0 : Received READY
+2020-08-16 00:55:12 | [WARNING] | Shard 0 : Unhandled gateway event: INVITE_CREATE
+2020-08-16 01:01:23 | [INFO]    | Discordia 2.8.3
+2020-08-16 01:01:23 | [INFO]    | Connecting to Discord...
+2020-08-16 01:01:23 | [INFO]    | Authenticated as 'B'#7189
+2020-08-16 01:01:23 | [INFO]    | Launching shard 0 (1 out of 1)...
+2020-08-16 01:01:24 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2020-08-16 01:01:24 | [INFO]    | Shard 0 : Received HELLO
+2020-08-16 01:01:24 | [INFO]    | Shard 0 : Received READY
+2020-08-16 01:02:01 | [INFO]    | Discordia 2.8.3
+2020-08-16 01:02:01 | [INFO]    | Connecting to Discord...
+2020-08-16 01:02:01 | [INFO]    | Authenticated as 'B'#7189
+2020-08-16 01:02:01 | [INFO]    | Launching shard 0 (1 out of 1)...
+2020-08-16 01:02:02 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2020-08-16 01:02:02 | [INFO]    | Shard 0 : Received HELLO
+2020-08-16 01:02:02 | [INFO]    | Shard 0 : Received READY
+2020-08-16 02:12:37 | [WARNING] | Shard 0 : Discord has requested a reconnection
+2020-08-16 02:12:37 | [INFO]    | Shard 0 : Disconnected
+2020-08-16 02:12:37 | [INFO]    | Shard 0 : Reconnecting...
+2020-08-16 02:12:37 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2020-08-16 02:12:37 | [INFO]    | Shard 0 : Received HELLO
+2020-08-16 02:12:37 | [INFO]    | Shard 0 : Received RESUMED
+2020-08-16 06:57:20 | [INFO]    | Discordia 2.8.3
+2020-08-16 06:57:20 | [INFO]    | Connecting to Discord...
+2020-08-16 06:57:20 | [INFO]    | Authenticated as 'B'#7189
+2020-08-16 06:57:20 | [INFO]    | Launching shard 0 (1 out of 1)...
+2020-08-16 06:57:20 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2020-08-16 06:57:20 | [INFO]    | Shard 0 : Received HELLO
+2020-08-16 06:57:21 | [INFO]    | Shard 0 : Received READY
+2020-08-16 06:59:15 | [INFO]    | Discordia 2.8.3
+2020-08-16 06:59:15 | [INFO]    | Connecting to Discord...
+2020-08-16 06:59:15 | [INFO]    | Authenticated as 'B'#7189
+2020-08-16 06:59:15 | [INFO]    | Launching shard 0 (1 out of 1)...
+2020-08-16 06:59:16 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2020-08-16 06:59:16 | [INFO]    | Shard 0 : Received HELLO
+2020-08-16 06:59:16 | [INFO]    | Shard 0 : Received READY
+2020-08-16 10:39:29 | [INFO]    | Discordia 2.8.3
+2020-08-16 10:39:29 | [INFO]    | Connecting to Discord...
+2020-08-16 10:39:29 | [INFO]    | Authenticated as 'B'#7189
+2020-08-16 10:39:30 | [INFO]    | Launching shard 0 (1 out of 1)...
+2020-08-16 10:39:30 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2020-08-16 10:39:30 | [INFO]    | Shard 0 : Received HELLO
+2020-08-16 10:39:30 | [INFO]    | Shard 0 : Received READY
+2020-08-16 10:40:24 | [INFO]    | Discordia 2.8.3
+2020-08-16 10:40:24 | [INFO]    | Connecting to Discord...
+2020-08-16 10:40:24 | [INFO]    | Authenticated as 'B'#7189
+2020-08-16 10:40:24 | [INFO]    | Launching shard 0 (1 out of 1)...
+2020-08-16 10:40:24 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2020-08-16 10:40:24 | [INFO]    | Shard 0 : Received HELLO
+2020-08-16 10:40:24 | [INFO]    | Shard 0 : Received READY
+2020-08-16 10:54:08 | [INFO]    | Discordia 2.8.3
+2020-08-16 10:54:08 | [INFO]    | Connecting to Discord...
+2020-08-16 10:54:08 | [INFO]    | Authenticated as 'B'#7189
+2020-08-16 10:54:08 | [INFO]    | Launching shard 0 (1 out of 1)...
+2020-08-16 10:54:08 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2020-08-16 10:54:08 | [INFO]    | Shard 0 : Received HELLO
+2020-08-16 10:54:08 | [INFO]    | Shard 0 : Received READY
