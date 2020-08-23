@@ -13,11 +13,11 @@ end
 
 local bot = client(process.env.TOKEN, {
   owners = {'525840152103223338'},
-  prefix = "lc;",
+  prefix = "rd;",
   logFile = './cache/discordia.log',
   gatewayFile = './cache/gateway.json'
 })
 
-require './plugin'(bot)
+require './watcher'(bot)
 
 bot:login()

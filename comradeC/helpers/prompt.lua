@@ -67,7 +67,9 @@ do
         if message == 'check' then
           local desc = ""
           for i, v in pairs(self.data) do
-            desc = tostring(desc) .. "\n" .. tostring(i) .. ": " .. tostring(v)
+            if not (i:sub(0, 1) == '_') then
+              desc = tostring(desc) .. "\n" .. tostring(i) .. ": " .. tostring(v)
+            end
           end
           if self.embed then
             local correct = embed()
@@ -81,7 +83,6 @@ do
         elseif message == 'now' then
           return self:handle()
         elseif message ~= 'none' then
-          p(message)
           if self.embed then
             return message:send(self.channel)
           else

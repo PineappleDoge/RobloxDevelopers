@@ -91,7 +91,7 @@ class prompt
       if message == 'check'
         desc = ""
         for i,v in pairs @data
-          desc = "#{desc}\n#{i}: #{v}"
+          desc = "#{desc}\n#{i}: #{v}" unless i\sub(0,1) == '_'
 
         if @embed
           correct = embed!
@@ -105,7 +105,6 @@ class prompt
       elseif message == 'now'
         @handle!
       elseif message ~= 'none'
-        p message
         message\send @channel if @embed else @message\reply message
   reply: (content) =>
     @channel\send content
