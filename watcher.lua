@@ -56,6 +56,6 @@ return function(client)
     onFirstload = function(n)
       client:debug(n .. ' command has been loaded!')
     end,
-    onBeforeload = p,
+    onBeforeload = function() end,
   })
 end

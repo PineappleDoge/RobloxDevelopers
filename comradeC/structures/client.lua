@@ -46,6 +46,7 @@ helper.__init = function(self, token, config)
   self._owners = config.owners or { }
   self._start = os.time()
   self._commands = array()
+  self._plugins = array()
   self._events = array()
   _G.intAssert = function(condition, message)
     if message == nil then

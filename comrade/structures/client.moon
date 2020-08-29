@@ -46,6 +46,8 @@ helper.__init = (token,config={}) =>
   @_start = os.time!
 
   @_commands = array!
+  @_plugins = array!
+
   @_events = array!
 
   _G.intAssert = (condition, message='Condition is false') ->
@@ -116,6 +118,5 @@ get.version = () ->
   version
 get.owners = () =>
   @_owners
-
 
 helper
