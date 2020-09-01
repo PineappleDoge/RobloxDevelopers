@@ -64,7 +64,6 @@ class command
     return false unless isValid
 
     if @hidden
-      p client.owners
       return false unless table.search(client.owners,msg.author.id)
 
     unless @allowDMS

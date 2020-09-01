@@ -83,7 +83,6 @@ do
         return false
       end
       if self.hidden then
-        p(client.owners)
         if not (table.search(client.owners, msg.author.id)) then
           return false
         end

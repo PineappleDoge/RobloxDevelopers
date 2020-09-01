@@ -1,5 +1,13 @@
-# Roblox Developers
+<div align="center">
+  <img width="80" src="https://cdn.discordapp.com/avatars/717480384417366196/419a02865ccbafe9f6bc17ce1157cea2.png?size=2048">
+  <h1>Roblox Developers Discord Bot</h1>
 
-We are welcome to pull requests.
+  <a href="https://discord.gg/6wEYYGZ"> 
+    <img src="https://img.shields.io/discord/460572114932465664?logo=discord&style=for-the-badge">
+  </a>
 
-Sometimes I have trouble sleeping at night,
+  <img src="https://img.shields.io/badge/Powered%20by-Comrade-red?style=for-the-badge">
+  <img src="https://img.shields.io/github/contributors/SovietKitsune/RobloxDevelopers?style=for-the-badge">
+</div>
+
+Roblox Developers is a development community based around Roblox. Our server is focused on helping developers hone their skills and helping new developers!

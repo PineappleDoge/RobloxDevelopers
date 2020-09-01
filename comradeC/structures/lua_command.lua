@@ -19,8 +19,7 @@ do
                 self[i] = v
               end
             end
-            _class_1.__parent.__init(self)
-            return p(self)
+            return _class_1.__parent.__init(self)
           end,
           __base = _base_1,
           __name = nil,

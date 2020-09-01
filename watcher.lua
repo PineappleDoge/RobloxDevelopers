@@ -31,7 +31,7 @@ return function(client)
     onFirstload = function(n)
       client:debug(n .. ' plugin has been loaded!')
     end,
-    onBeforeload = p,
+    onBeforeload = function() end,
   })
 
   -- Command watcher
