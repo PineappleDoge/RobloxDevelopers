@@ -1,12 +1,9 @@
-local get
-get = require('../init').get
-local embed
-embed = get.embed
 local setTimeout, clearTimeout
 do
   local _obj_0 = require('timer')
   setTimeout, clearTimeout = _obj_0.setTimeout, _obj_0.clearTimeout
 end
+local embed = require('../structures/embed')
 local prompts = { }
 local globalActions = {
   check = function(content, prompt)

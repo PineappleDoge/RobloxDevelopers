@@ -1,5 +1,5 @@
-import get from require '../init'
-import command,event from get
+command = require './command'
+event = require './event'
 
 class plguinCommand extends command
   @commands = {}

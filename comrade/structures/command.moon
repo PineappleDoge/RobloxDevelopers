@@ -1,5 +1,7 @@
 import get from require '../init'
-import util, embed from get
+
+embed = require './embed'
+util = require '../helpers/util'
 
 import setTimeout from require 'timer'
 

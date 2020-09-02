@@ -1,7 +1,5 @@
-local get
-get = require('../init').get
-local command, event
-command, event = get.command, get.event
+local command = require('./command')
+local event = require('./event')
 local plguinCommand
 do
   local _class_0

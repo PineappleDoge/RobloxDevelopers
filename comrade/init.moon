@@ -1,29 +1,37 @@
+import scandirSync from require 'fs'
+
 helper = {
   version: '1.0.0-dev',
   name: 'Comrade'
 }
 
-mods = {}
+get = (toload) ->
+  locations = {
+    array: require './structures/array'
+    client: require './structures/client'
+    command: require './structures/command'
+    embed: require './structures/embed'
+    event: require './structures/event'
+    help: require './structures/help'
+    internalError: require './structures/internalError'
+    lua_command: require './structures/lua_command'
+    plugin: require './structures/plugin'
 
-locations = {
-    'constants/', 'deps/', 'structures/',
-    'helpers/'
-}
+    logging: require './helpers/logging'
+    prompt: require './helpers/prompt'
+    util: require './helpers/util'
 
-get = (file) ->
-  func = () ->
-    modFile = nil
-    for _,v in pairs locations
-      succ,_ = pcall require, "./#{v}#{file}"
-      modFile = require "./#{v}#{file}" if succ
-    modFile
-  
-  mod = mods[file] or func!
-  assert mod, "Module not found; #{file}"
+    argparser: require './deps/argparser'
+    dotenv: require './deps/dotenv'
+    extenstions: require './deps/extenstions'
+    sandbox: require './deps/sandbox'
 
-  mods[file] = mod
+    color: require './constants/color'
+  }
 
-  mod
+  assert locations[toload], 'Module not found'
+
+  locations[toload]
 
 helper.get = {}
 helper.lua = require './lua'

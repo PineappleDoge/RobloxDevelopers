@@ -3,8 +3,8 @@ do
   local _obj_0 = require('../init')
   get, version, name = _obj_0.get, _obj_0.version, _obj_0.name
 end
-local internalError, array, logging
-internalError, array, logging = get.internalError, get.array, get.logging
+local internalError = require('./internalError')
+local array = require('./array')
 local discordia = require('discordia')
 local enums
 enums = discordia.enums

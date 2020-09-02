@@ -1,5 +1,7 @@
 import get, version, name from require '../init'
-import internalError, array,logging  from get
+
+internalError = require './internalError'
+array = require './array'
 
 discordia = require 'discordia'
 

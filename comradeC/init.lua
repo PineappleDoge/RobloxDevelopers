@@ -1,32 +1,32 @@
+local scandirSync
+scandirSync = require('fs').scandirSync
 local helper = {
   version = '1.0.0-dev',
   name = 'Comrade'
 }
-local mods = { }
-local locations = {
-  'constants/',
-  'deps/',
-  'structures/',
-  'helpers/'
-}
 local get
-get = function(file)
-  local func
-  func = function()
-    local modFile = nil
-    for _, v in pairs(locations) do
-      local succ
-      succ, _ = pcall(require, "./" .. tostring(v) .. tostring(file))
-      if succ then
-        modFile = require("./" .. tostring(v) .. tostring(file))
-      end
-    end
-    return modFile
-  end
-  local mod = mods[file] or func()
-  assert(mod, "Module not found; " .. tostring(file))
-  mods[file] = mod
-  return mod
+get = function(toload)
+  local locations = {
+    array = require('./structures/array'),
+    client = require('./structures/client'),
+    command = require('./structures/command'),
+    embed = require('./structures/embed'),
+    event = require('./structures/event'),
+    help = require('./structures/help'),
+    internalError = require('./structures/internalError'),
+    lua_command = require('./structures/lua_command'),
+    plugin = require('./structures/plugin'),
+    logging = require('./helpers/logging'),
+    prompt = require('./helpers/prompt'),
+    util = require('./helpers/util'),
+    argparser = require('./deps/argparser'),
+    dotenv = require('./deps/dotenv'),
+    extenstions = require('./deps/extenstions'),
+    sandbox = require('./deps/sandbox'),
+    color = require('./constants/color')
+  }
+  assert(locations[toload], 'Module not found')
+  return locations[toload]
 end
 helper.get = { }
 helper.lua = require('./lua')

@@ -1,7 +1,7 @@
 local get
 get = require('../init').get
-local command, embed
-command, embed = get.command, get.embed
+local command = require('./command')
+local embed = require('./embed')
 local help
 do
   local _class_0
@@ -67,5 +67,5 @@ do
     _parent_0.__inherited(_parent_0, _class_0)
   end
   help = _class_0
+  return _class_0
 end
-return help()

@@ -1,7 +1,7 @@
 local get
 get = require('../init').get
-local util, embed
-util, embed = get.util, get.embed
+local embed = require('./embed')
+local util = require('../helpers/util')
 local setTimeout
 setTimeout = require('timer').setTimeout
 local Date

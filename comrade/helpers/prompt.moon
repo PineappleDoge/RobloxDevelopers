@@ -1,8 +1,6 @@
-import get from require '../init'
-
-import embed from get
-
 import setTimeout,clearTimeout from require 'timer'
+
+embed = require '../structures/embed'
 
 prompts = {}
 

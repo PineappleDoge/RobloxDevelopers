@@ -1,6 +1,7 @@
 import get from require '../init'
 
-import command,embed from get
+command = require './command'
+embed = require './embed'
 
 class help extends command
   new: () =>
@@ -33,5 +34,3 @@ class help extends command
         command\help msg.channel
       else
         msg\reply 'Could\'t find that command'
-
-help!
