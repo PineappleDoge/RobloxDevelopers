@@ -1,5 +1,4 @@
 <div align="center">
-<div align="center">
   <img width="80" src="https://cdn.discordapp.com/avatars/717480384417366196/419a02865ccbafe9f6bc17ce1157cea2.png?size=2048">
   <h1>Roblox Developers Discord Bot</h1>
 
@@ -11,6 +10,4 @@
   <img src="https://img.shields.io/github/contributors/SovietKitsune/RobloxDevelopers?style=for-the-badge">
 </div>
 
-Mr. Roblox Developers is a <b>multi-purpose bot</b> centered around management of Roblox Developers, a Roblox-Based development community focused on giving developers a place to collaborate, learn, and teach others!
-
-
+Roblox Developers is a multi-purpose bot centered around management of <h1> style = "color:rgb(66f174)"Roblox Developers </h1>, a Roblox-Based development community focused on giving developers a place to collaborate, learn, and teach others!
