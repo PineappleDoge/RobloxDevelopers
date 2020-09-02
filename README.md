@@ -11,4 +11,6 @@
   <img src="https://img.shields.io/github/contributors/SovietKitsune/RobloxDevelopers?style=for-the-badge">
 </div>
 
-Roblox Developers is a multi-purpose bot centered around management of Roblox Developers, a Roblox-Based development community focused on giving developers a place to collaborate, learn, and teach others!
+Mr. Roblox Developers is a <b>multi-purpose bot</b> centered around management of Roblox Developers, a Roblox-Based development community focused on giving developers a place to collaborate, learn, and teach others!
+
+
