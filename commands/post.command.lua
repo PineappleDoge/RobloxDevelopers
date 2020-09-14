@@ -1,10 +1,10 @@
 -- COMPILED MOONSCRIPT
 -- DO NOT TOUCH
 
-local get
-get = require('./comradeC').get
-local command, embed, prompt, color
-command, embed, prompt, color = get.command, get.embed, get.prompt, get.color
+local comrade = require 'Comrade'
+
+local command, embed, prompt, color = comrade.Command, comrade.Embed, comrade.prompt, comrade.color
+
 local request
 request = require('coro-http').request
 local encode

@@ -11,3 +11,5 @@
 </div>
 
 Roblox Developers is a multi-purpose bot centered around management of Roblox Developers, a Roblox-Based development community focused on giving developers a place to collaborate, learn, and teach others!
+
+When cloning make sure to use the `--recursive` flag.

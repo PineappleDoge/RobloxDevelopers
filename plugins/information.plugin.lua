@@ -1,7 +1,6 @@
-local comrade = require './comradeC'
-local get,lua = comrade.get, comrade.lua
+local comrade = require 'Comrade'
 
-local plugin, embed = get.plugin, get.embed
+local plugin, embed, lua = comrade.Plugin, comrade.Embed, comrade.lua
 
 local Date = require 'discordia'.Date
 
@@ -33,7 +32,7 @@ return lua.class('information', {}, plugin, function(self)
         return member.name:lower():match(table.concat(args, ' '):lower())
       end)) or (not args[1] and msg.member)
 
-      if not member then return msg:reply "We could't find them" end
+      if not member then return msg:reply "We couldn't find them" end
 
       local roles = ""
 

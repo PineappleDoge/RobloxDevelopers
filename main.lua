@@ -1,9 +1,7 @@
-local comrade = require './comradeC'
+local comrade = require 'Comrade'
 local fs = require 'fs'
 
-local get = comrade.get
-
-local client, dotenv = get.client, get.dotenv
+local client, dotenv = comrade.Client, comrade.dotenv
 
 dotenv.config()
 

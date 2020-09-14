@@ -1,9 +1,8 @@
-local comrade = require './comradeC'
-local get = comrade.get
+local comrade = require 'Comrade'
 
-local command = get.lua_command
+local command = comrade.LuaCommand
 
-local comm = command('example')
+local comm = command 'example'
 
 comm.example = comm.name .. 'some example'
 comm.description = 'Some description'
