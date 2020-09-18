@@ -10,7 +10,7 @@
     <img src="https://img.shields.io/badge/Powered%20by-Comrade-red?style=for-the-badge">
   </a>
 
-  <img src="https://img.shields.io/github/contributors/SovietKitsune/RobloxDevelopers?style=for-the-badge">
+  <img src="https://img.shields.io/github/contributors/PineappleDoge/RobloxDevelopers?style=for-the-badge">
 </div>
 
 Roblox Developers is a multi-purpose bot centered around management of Roblox Developers, a Roblox-Based development community focused on giving developers a place to collaborate, learn, and teach others!
@@ -20,7 +20,7 @@ Roblox Developers is a multi-purpose bot centered around management of Roblox De
 First clone the repository
 
 ```sh
-git clone --recursive https://github.com/SovietKitsune/RobloxDevelopers.git
+git clone --recursive https://github.com/PineappleDoge/RobloxDevelopers.git
 ```
 
 Next have a .env
