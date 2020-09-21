@@ -1,0 +1,7 @@
+return describe('example command', function()
+  return it('should reply with `Some command`', function()
+    local msg = assert(execute(tostring(bot.prefix) .. "example"))
+    assert(msg.content == "Some command", 'Bot did not reply with `Some command`')
+    return assert(not tester.errored, 'Bot errored while testing')
+  end)
+end)

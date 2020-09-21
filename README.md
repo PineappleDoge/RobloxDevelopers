@@ -20,7 +20,7 @@ Roblox Developers is a multi-purpose bot centered around management of Roblox De
 First clone the repository
 
 ```sh
-git clone --recursive https://github.com/PineappleDoge/RobloxDevelopers.git
+git clone --recursive https://github.com/Roblox-Developers-CodeSkids/RobloxDevelopers.git
 ```
 
 Next have a .env
