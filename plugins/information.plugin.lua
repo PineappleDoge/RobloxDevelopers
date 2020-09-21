@@ -28,9 +28,12 @@ return lua.class('information', {}, plugin, function(self)
 
   lua.class('whois', {
     execute = function(_,msg, args)
-      local member = (msg.mentionedUsers.first and msg.guild:getMember(msg.mentionedUsers.first.id)) or (tonumber(args[1]) and msg.guild:getMember(args[1])) or (args[1] and msg.guild.members:find(function(member)
-        return member.name:lower():match(table.concat(args, ' '):lower())
-      end)) or (not args[1] and msg.member)
+      local member = (msg.mentionedUsers.first and msg.guild:getMember(msg.mentionedUsers.first.id)) 
+        or (tonumber(args[1]) and msg.guild:getMember(args[1])) 
+        or (args[1] and msg.guild.members:find(function(member)
+          return member.name:lower():match(table.concat(args, ' '):lower())
+        end)) 
+        or (not args[1] and msg.member)
 
       if not member then return msg:reply "We couldn't find them" end
 

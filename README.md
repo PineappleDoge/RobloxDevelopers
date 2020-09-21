@@ -7,10 +7,12 @@
   </a>
 
   <a href="https://github.com/comrade-project/Comrade/">
-    <img src="https://img.shields.io/badge/Powered%20by-Comrade-red?style=for-the-badge">
+    <img src="https://img.shields.io/badge/Powered%20by-Comrade-red?style=for-the-badge&color=success">
   </a>
 
-  <img src="https://img.shields.io/github/contributors/PineappleDoge/RobloxDevelopers?style=for-the-badge">
+  <img src="https://img.shields.io/github/contributors/Roblox-Developers-CodeSkids/RobloxDevelopers?style=for-the-badge">
+
+  <img src="https://img.shields.io/travis/Roblox-Developers-CodeSkids/robloxdevelopers?style=for-the-badge">
 </div>
 
 Roblox Developers is a multi-purpose bot centered around management of Roblox Developers, a Roblox-Based development community focused on giving developers a place to collaborate, learn, and teach others!
