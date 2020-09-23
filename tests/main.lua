@@ -18,7 +18,6 @@ local tester = faker.Client(process.env.TESTER, {
   mainbot = bot,
   waitTime = 2500
 })
-bot:addCommand(require('../commands/post.command')())
 bot:addCommand(require('../commands/example.command')())
 require('../plugins/information.plugin'):use(bot)
 bot:login()

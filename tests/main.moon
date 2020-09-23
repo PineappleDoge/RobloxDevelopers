@@ -21,7 +21,7 @@ tester = faker.Client process.env.TESTER, {
 
 -- Load commands --
 
-bot\addCommand require('../commands/post.command')!
+-- bot\addCommand require('../commands/post.command')!
 bot\addCommand require('../commands/example.command')!
 
 require('../plugins/information.plugin')\use bot
