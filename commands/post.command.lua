@@ -83,6 +83,8 @@ function comm:execute(msg, _, client)
         
           Current Selected Channel(s): <%- table.concat((get('channels') or {'None'}), ', ') %>
 
+          Say `next` to continue
+
           `builder`, `modeler`, `scripter`, `animator`, `clothing`, `vfx`, `graphics`, `other`
         <% elseif get('_action') == 'sell' then %>
           What would you like to sell
