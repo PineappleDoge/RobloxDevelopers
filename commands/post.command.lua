@@ -1,205 +1,228 @@
--- COMPILED MOONSCRIPT
--- DO NOT TOUCH
-
 local comrade = require 'Comrade'
+local toml = require 'toml'
+local json = require 'json'
+local fs = require 'fs'
 
-local command, embed, prompt, color = comrade.Command, comrade.Embed, comrade.prompt, comrade.color
+local config = toml.parse(fs.readFileSync('config.toml'), {strict = true})
 
-local request
-request = require('coro-http').request
-local encode
-encode = require('json').encode
-local hooks = process.env--[[{
-  scripting = '',
-  building = '',
-  modeling = '',
-  animating = '',
-  clothing = '',
-  vfx = '',
-  graphics = '',
-  other = ''
-}]]
-local post
-do
-  local _class_0
-  local _parent_0 = command
-  local _base_0 = {
-    execute = function(self, msg, _, client)
-      return prompt(msg, client, {
-        timeout = 60000,
-        embed = true,
-        tasks = {
-          {
-            message = embed({
-              title = 'Business Category Prompt',
-              description = "Hello! You're currently in a prompt! Please look below and type the following answer, or type cancel to cancel",
-              fields = {
-                {
-                  name = 'Post Options',
-                  value = "hiring = You're hiring"
-                }
-              }
-            }),
-            action = function(content, prompt, msg)
-              prompt:save('_creator', msg.author.tag)
-              prompt:save('_icon', msg.author.avatarURL)
-              if content == 'hiring' then
-                return prompt:next()
-              elseif content == 'cancel' then
-                msg:reply('Closed prompt.')
-                return prompt:close()
-              else
-                return prompt:redo()
-              end
-            end
-          },
-          {
-            message = embed({
-              title = 'Business Category Prompt',
-              description = 'Great! What channel(s) would you like to post your hiring request in',
-              fields = {
-                {
-                  name = 'Post Options',
-                  value = 'Building, Scripting, Animating, Clothing, VFX, Graphics, Other'
-                }
-              }
-            }),
-            action = function(content, prompt)
-              if content == 'cancel' then
-                prompt:reply('Closed prompt.')
-                return prompt:close()
-              end
-              local option = {
-                'building',
-                'scripting',
-                'animating',
-                'clothing',
-                'vfx',
-                'graphics',
-                'other'
-              }
-              content = content:lower()
-              if not (table.search(option, content)) then
-                return prompt:redo()
-              else
-                prompt:save('selection', content:lower())
-                return prompt:next()
-              end
-            end
-          },
-          {
-            message = embed({
-              title = 'Business Category Prompt',
-              description = 'How much are you going to pay (robux)'
-            }),
-            action = function(content, prompt)
-              if content == 'cancel' then
-                prompt:reply('Closed prompt.')
-                return prompt:close()
-              end
-              if not (tonumber(content)) then
-                return prompt:redo()
-              else
-                prompt:save('payment', tonumber(content))
-                return prompt:next()
-              end
-            end
-          },
-          {
-            message = embed({
-              title = 'Business Category Prompt',
-              description = 'Write a description of what you want'
-            }),
-            action = function(content, prompt)
-              if content == 'cancel' then
-                prompt:reply('Closed prompt.')
-                return prompt:close()
-              end
-              prompt:save('description', content)
-              return prompt:next()
-            end
-          },
-          {
-            message = 'check',
-            action = 'check'
-          },
-          {
-            message = 'now',
-            action = function(_, prompt)
-              embed({
-                title = 'Business Category Prompt',
-                description = 'Posted your offer!'
-              }):send(prompt.channel)
-              local content = embed({
-                title = "Hiring request for " .. tostring(prompt:get('selection')),
-                description = "Payment: " .. tostring(prompt:get('payment')) .. " Robux",
-                fields = {
-                  {
-                    name = 'Description',
-                    value = prompt:get('description')
-                  }
-                },
-                color = color.LIGHT_GREEN
-              }):toJSON()
-              local sending = encode({
-                username = prompt:get('_creator'),
-                ['avatar_url'] = prompt:get('_icon'),
-                embeds = {
-                  content
-                }
-              })
-              request('POST', hooks[prompt:get('selection')], {
-                {
-                  'Content-Length',
-                  #sending
-                },
-                {
-                  'Content-Type',
-                  'application/json'
-                }
-              }, sending)
-              return prompt:close()
-            end
-          }
-        }
-      })
-    end
+local command, prompt, template, embed, util = comrade.LuaCommand, comrade.prompt, comrade.Template, comrade.Embed, comrade.util
+
+local comm = command 'post'
+
+local plate = template {
+  title = "Roblox Developers Marketplace Prompt",
+  description = "{{description}}",
+  footer = {
+    text = "Say cancel to cancel"
   }
-  _base_0.__index = _base_0
-  setmetatable(_base_0, _parent_0.__base)
-  _class_0 = setmetatable({
-    __init = function(self)
-      _class_0.__parent.__init(self)
-      self.description = 'Post to the hiring channels'
-      self.usage = tostring(self.name)
-      self.example = tostring(self.name)
-    end,
-    __base = _base_0,
-    __name = "post",
-    __parent = _parent_0
-  }, {
-    __index = function(cls, name)
-      local val = rawget(_base_0, name)
-      if val == nil then
-        local parent = rawget(cls, "__parent")
-        if parent then
-          return parent[name]
-        end
-      else
-        return val
-      end
-    end,
-    __call = function(cls, ...)
-      local _self_0 = setmetatable({}, _base_0)
-      cls.__init(_self_0, ...)
-      return _self_0
-    end
-  })
-  _base_0.__class = _class_0
-  if _parent_0.__inherited then
-    _parent_0.__inherited(_parent_0, _class_0)
-  end
-  post = _class_0
+}
+
+local function exit(comm, msg, prompt)
+  prompt:reply 'Canceled!'
+  comm.cooldowns[msg.author.id] = nil -- Don't put on cooldown if they canceled
+  prompt:close()
 end
 
-return post
+local hiring = config.hiring
+
+comm.cooldown = util.hours(6)
+
+function comm:execute(msg, _, client)
+  local member = msg.member
+
+  if member.roles:find(function(role) return table.search(hiring.notAllowed, role.id) end) then
+    return msg:reply 'You are restricted from this channel'
+  elseif not member.roles:find(function(role) return table.search(hiring.allowed, role.id) end) then
+    local roles = ""
+
+    member.roles:forEach(function(role)
+      roles = tostring(roles) .. ", <@&" .. tostring(role.id) .. ">"
+    end)
+
+    return msg:reply 'You do not have Copper+, you have ' .. roles
+  end
+
+  prompt({
+    channel = msg.author:getPrivateChannel(),
+    author = msg.author
+  }, client, {
+    embed = true,
+    tasks = {
+      {
+        message = plate:render {description = [[
+        Hello! You've successfully opted into the opting process. Please follow the prompt and answer appropriately and I'll post your hiring prompt to a secret moderation channel where『 M 』Moderators will review and either accept/decline your prompt. What are you looking to create a prompt for?
+
+        `Hiring` - Post a hiring request in the channels excluding <#690008026513801225> and <#690008198718947341>
+        `Selling` - Post a selling request in <#690008026513801225>
+        `Looking For Work` - Post your portfolio in <#690008198718947341>
+        ]]},
+        action = function(content, prompt, recieved)
+          content = content:lower()
+          if content == 'cancel' then return exit(self, msg, prompt) end
+
+          prompt:save('_message', recieved)
+
+          if content == 'looking for work' then
+            prompt:save('_action', 'lfw')
+            prompt:next()
+          elseif content == 'selling' then
+            prompt:save('_action', 'sell')
+            prompt:next()
+          elseif content == 'hiring' then
+            prompt:save('_action', 'hire')
+            prompt:next()
+          else
+            prompt:redo()
+          end
+
+        end
+      }, {
+        message = plate:construct({ description = [[
+        <% if get('_action') == 'hire' then %>
+          Hello! You've successfully opted into the hiring process. To start, what channel(s) would you like to post your hiring ad in? After you have selected at least 1 channel you want to post in, press Y to continue the prompt. To remove a channel from the currently selected channels table, type "remove channel-name"
+        
+          Current Selected Channel(s): <%- table.concat((get('channels') or {'None'}), ', ') %>
+
+          `builder`, `modeler`, `scripter`, `animator`, `clothing`, `vfx`, `graphics`, `other`
+        <% elseif get('_action') == 'sell' then %>
+          What would you like to sell
+        <% elseif get('_action') == 'lfw' then %>
+          What skills do you have
+        <% end %>
+        ]]}, true),
+        action = function(content, prompt)
+          content = content:lower()
+          if content == 'cancel' then return exit(self, msg, prompt) end
+
+          local valid = {'builder', 'modeler', 'scripter', 'animator', 'clothing', 'vfx', 'graphics', 'other'}
+          local current = prompt:get('channels') or {}
+
+          if content:sub(0,7) == 'remove ' then
+            local toRemove = content:sub(8, #content)
+
+            if not table.search(valid, toRemove) then
+              prompt:reply "That channel does not exist."
+            elseif table.search(current, toRemove) then
+              local _, pos = table.search(current, toRemove)
+
+              table.remove(current, pos)
+              prompt:save('channels', current)
+
+              prompt:reply("Removed " .. toRemove .. " from your channels.")
+              prompt:redo()
+            else
+              prompt:reply "That channel isn't in your Current Select Channel(s) table. Remember, proper typing of the channel name is needed."
+              prompt:redo()
+            end
+          elseif content == 'next' then
+            if #current == 0 then
+              prompt:reply 'Please specify 1 channel.'
+              prompt:redo()
+            else
+              prompt:next()
+            end
+          elseif table.search(valid, content) and not table.search(current, content) then
+            table.insert(current, content)
+            prompt:save('channels', current)
+            prompt:redo()
+          elseif table.search(current, content) then
+            prompt:reply 'That channel is already in your list!'
+            prompt:redo()
+          else
+            prompt:reply "Sorry, but that's not a channel we support hiring request in. Please take a look above at what channels we support."
+            prompt:redo()
+          end
+        end
+      }, {
+        message = plate:construct({description = [[
+        <% if get('_action') == 'sell' then %>
+          How much would you like to sell for
+        <% elseif get('_action') == 'hire' then %>
+          Great! Please type a description of the job you're looking for people to do. Be informative as possible, listing the workplace, stylistic visions, people on the team, ETC.
+        <% elseif get('_action') == 'lfw' then %>
+          What are your prices
+        <% end %>
+        ]]}, true),
+        action = function(content, prompt)
+          if content == 'cancel' then return exit(self, msg, prompt) end
+
+          prompt:save('description', content)
+
+          prompt:next()
+        end
+      }, {
+        message = plate:construct({ description = [[
+        <% if get('_action') == 'sell' then %>
+          Can you put images of what your selling
+        <% elseif get('_action') == 'hire' then %>
+          Great! Please list payment. If payment is negotiable, please list a price range in which you are willing to pay and **can** pay. If payment is percentage based (%), please state that.
+        <% elseif get('_action') == 'lfw' then %>
+          Post examples of your work
+        <% end %>
+        ]]}, true),
+        action = function(content, prompt)
+          if content == 'cancel' then return exit(self, msg, prompt) end
+
+          prompt:save('prices', content)
+
+          prompt:next()
+        end
+      }, {
+        message = plate:construct({ description = [[
+          Anything else? For example current studio work?
+        ]], true}),
+        action = function(content, prompt)
+          if content == 'cancel' then return exit(self, msg, prompt) end
+
+          prompt:save('other', content)
+
+          prompt:next()
+        end
+      },  {
+        message = 'check',
+        action = 'check'
+      },
+      {
+        message = 'now',
+        action = function(_, prompt)
+          local message = prompt:get '_message'
+          local author = message.author
+
+          local desc = ''
+          local metadata = {}
+
+          for i,v in pairs(prompt.data) do
+            if i:sub(0, 1) ~= '_' or i == '_action' then
+              desc = desc .. "**" .. i .. "** - " .. tostring((type(v) == 'table' and table.concat(v, ', ')) or v) .. '\n'
+              metadata[i] = v
+            end
+          end
+
+          metadata.author = author.id
+
+          local logs = client:getChannel(hiring.logs)
+
+          local sent = embed({
+            title = "Marketplace request for " .. author.tag .. " (" .. author.id .. ")",
+            description = desc,
+            fields = {
+              {name = 'Metadata', value = "```json\n" .. json.encode(metadata) .. "```"}
+            }
+          }):send(logs)
+
+          sent:addReaction '🔼'
+          sent:addReaction '↔️'
+          sent:addReaction '🔽'
+
+          prompt:reply 'Sent for approval!'
+
+          msg:reply 'Prompt has finished'
+
+          prompt:close()
+        end
+      }
+    }
+  })
+end
+
+return comm:make()

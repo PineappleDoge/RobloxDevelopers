@@ -58,4 +58,29 @@ return function(client)
     end,
     onBeforeload = function() end,
   })
+
+  -- Event watcher
+
+  loader('./events/', '([^%/]+)%.event%.lua$', env, {
+    onErr = function(n, err)
+      client:error(n .. ' event has caused an error; ' .. err)
+    end,
+    onLoad = function(n,r,c)
+      client:addEvent(c())
+    end,
+    onUnload = function(n)
+      client:removeEvent(n)
+    end,
+    onDeleted = function(n)
+      client:warn(n .. ' event has been deleted!')
+      client:unload(n)
+    end,
+    onReloaded = function(n)
+      client:debug(n .. ' event has been reloaded!')
+    end,
+    onFirstload = function(n)
+      client:debug(n .. ' event has been loaded!')
+    end,
+    onBeforeload = function() end,
+  })
 end

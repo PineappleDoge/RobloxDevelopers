@@ -14,7 +14,7 @@ local bot = client(process.env.TOKEN, {
     '525840152103223338',
     '294602562819325955'
   },
-  prefix = "rd;",
+  prefix = "`",
   logFile = './cache/discordia.log',
   gatewayFile = './cache/gateway.json'
 })
