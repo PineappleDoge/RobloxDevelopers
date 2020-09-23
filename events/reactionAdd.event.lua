@@ -33,29 +33,32 @@ local function check(message, hash, client, userId)
     message:setContent 'Closed'
 
     local parsed = json.parse(metadata)
-    local user = client:getUser(userId)
+    local author = client:getUser(parsed.author)
 
     if hash == '🔼' then
-      user:send 'Your hiring request has been accepted!'
+      author:send 'Your hiring request has been accepted!'
 
       local toSend = template {
         title = "Hiring request",
         description = [[
         Contact: {{contact}}
 
-        Paying: {{paying}}
+
         Description: {{description}}
+
+        Paying: {{paying}}
+
         Other: {{other}}
         ]]
       }
 
       toSend = toSend:render {
-        contact = user.tag,
+        contact = author.tag,
         paying = parsed.prices,
         description = parsed.description,
         other = parsed.other
       }
-  
+
       for _,v in pairs(parsed.channels) do
         local id = channels[v]
 
@@ -66,7 +69,7 @@ local function check(message, hash, client, userId)
     elseif hash == '↔️' then
       -- IDK
     elseif hash == '🔽' then
-      user:send 'Your hiring request has been declined.'
+      author:send 'Your hiring request has been declined.'
     else
       message:reply 'Invalid reaction'
     end

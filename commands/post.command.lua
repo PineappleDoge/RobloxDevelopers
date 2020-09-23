@@ -17,9 +17,9 @@ local plate = template {
   }
 }
 
-local function exit(comm, msg, prompt)
+local function exit(_, msg, prompt)
   prompt:reply 'Canceled!'
-  comm.cooldowns[msg.author.id] = nil -- Don't put on cooldown if they canceled
+  msg:reply 'Canceled!'
   prompt:close()
 end
 
@@ -28,6 +28,8 @@ local hiring = config.hiring
 comm.cooldown = util.hours(6)
 
 function comm:execute(msg, _, client)
+  self.cooldowns[msg.author.id] = nil
+
   local member = msg.member
 
   if member.roles:find(function(role) return table.search(hiring.notAllowed, role.id) end) then
@@ -36,11 +38,13 @@ function comm:execute(msg, _, client)
     local roles = ""
 
     member.roles:forEach(function(role)
-      roles = tostring(roles) .. ", <@&" .. tostring(role.id) .. ">"
+      roles = tostring(roles) .. ", `" .. tostring(role.name) .. "`"
     end)
 
-    return msg:reply 'You do not have Copper+, you have ' .. roles
+    return msg:reply('You do not have Copper+, you have ' .. tostring(roles))
   end
+
+  msg:reply 'Check your dms'
 
   prompt({
     channel = msg.author:getPrivateChannel(),
@@ -219,6 +223,7 @@ function comm:execute(msg, _, client)
           prompt:reply 'Sent for approval!'
 
           msg:reply 'Prompt has finished'
+          self.cooldowns[msg.author.id] = nil
 
           prompt:close()
         end
