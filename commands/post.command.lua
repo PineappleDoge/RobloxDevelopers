@@ -51,6 +51,7 @@ function comm:execute(msg, _, client)
     author = msg.author
   }, client, {
     embed = true,
+    timeout = util.minutes(2),
     tasks = {
       {
         message = plate:render {description = [[
@@ -216,14 +217,14 @@ function comm:execute(msg, _, client)
             }
           }):send(logs)
 
-          sent:addReaction '🔼'
-          sent:addReaction '↔️'
-          sent:addReaction '🔽'
+          sent:addReaction(hiring.approved)
+          sent:addReaction(hiring.unapprove)
+          sent:addReaction(hiring.ban)
 
           prompt:reply 'Sent for approval!'
 
           msg:reply 'Prompt has finished'
-          self.cooldowns[msg.author.id] = nil
+          self.cooldowns[msg.author.id] = true
 
           prompt:close()
         end

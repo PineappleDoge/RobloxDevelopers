@@ -1,4 +1,7 @@
 [hiring]
+approved = "✅"
+unapprove = "❌"
+ban = "🔨"
 allowed = [ # If you don't have one of these roles you can't hire
   "462035726440202240",
   "462035713043464203",
@@ -10,6 +13,7 @@ allowed = [ # If you don't have one of these roles you can't hire
 notAllowed = [ # Over powers allowed
   "743926676693712977"
 ]
+banRole = "743926676693712977"
 logs = "758187045754503169"
 
 [hiring.channels]

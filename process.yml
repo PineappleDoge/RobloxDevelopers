@@ -1,0 +1,3 @@
+apps:
+  - script: luvit main.lua
+    name  : 'Discord-bot'

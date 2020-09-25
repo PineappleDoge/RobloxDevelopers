@@ -6,7 +6,9 @@ local fs = require 'fs'
 
 local config = toml.parse(fs.readFileSync('config.toml'), {strict = true})
 
-local channels = config.hiring.channels
+local hiring = config.hiring
+
+local channels = hiring.channels
 
 local event, lua, template = comrade.Event, comrade.lua, comrade.Template
 
@@ -35,7 +37,7 @@ local function check(message, hash, client, userId)
     local parsed = json.parse(metadata)
     local author = client:getUser(parsed.author)
 
-    if hash == '🔼' then
+    if hash == hiring.approved then
       author:send 'Your hiring request has been accepted!'
 
       local toSend = template {
@@ -66,9 +68,17 @@ local function check(message, hash, client, userId)
 
         toSend:send(channel)
       end
-    elseif hash == '↔️' then
-      -- IDK
-    elseif hash == '🔽' then
+    elseif hash == hiring.ban then
+      local member = message.guild:getMember(author.id)
+
+      if not member then
+        message:reply "Can't find user"
+      else
+        member:addRole(hiring.banRole)
+        message:reply("Banned " .. member.nickname or member.username .. " from hiring!")
+        author:send 'Your hiring request has been declined and you have been banned from hiring!'
+      end
+    elseif hash == hiring.unapprove then
       author:send 'Your hiring request has been declined.'
     else
       message:reply 'Invalid reaction'

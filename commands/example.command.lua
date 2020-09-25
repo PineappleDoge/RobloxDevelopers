@@ -9,7 +9,7 @@ comm.description = 'Some description'
 comm.usage = comm.name .. ' [some argument]'
 
 function comm:execute(msg)
-  msg:reply 'Some command'
+  --msg:reply 'Some command'
 end
 
 return comm:make()
