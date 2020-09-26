@@ -4,6 +4,5 @@
   ],
   "Lua.diagnostics.disable": [
     "redundant-parameter"
-  ],
-  "discord.enabled": false
+  ]
 }

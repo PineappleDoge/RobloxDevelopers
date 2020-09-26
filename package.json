@@ -1,0 +1,18 @@
+{
+  "name": "server-bot",
+  "description": "Roblox Developers Discord Bot",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SovietKitsune/RobloxDevelopers.git"
+  },
+  "author": "Soviet Kitsune",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SovietKitsune/RobloxDevelopers/issues"
+  },
+  "homepage": "https://github.com/SovietKitsune/RobloxDevelopers#readme",
+  "dependencies": {
+    "@pm2/io": "^4.3.5",
+    "dotenv": "^8.2.0"
+  }
+}
