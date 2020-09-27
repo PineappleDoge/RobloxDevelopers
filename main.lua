@@ -6,6 +6,8 @@ local json = require 'json'
 
 local timer = require 'timer'
 
+local logger = require './logger'
+
 local client, dotenv = comrade.Client, comrade.dotenv
 
 dotenv.config()
@@ -61,13 +63,20 @@ end
 bot:on('ready', function()
   bot:addCommand(comrade.Status)
 
+  logger.info 'Bot is online; This usually means it was restarted'
+
   -- Connect to metrics --
   local port = tonumber(process.argv[2])
 
   if port then
-    local _, realWrite = assert(net.connect({
+    local succ, realWrite = net.connect({
       port = port
-    }))
+    })
+
+    if not succ then
+      logger.error 'Unable to connect to metrics; exiting...'
+      process:exit(1)
+    end
 
     write = function(str)
       realWrite(str .. '|')
@@ -76,6 +85,8 @@ bot:on('ready', function()
     updateStats(write, bot)
   end
 end)
+
+bot:on('error', logger.error)
 
 -- Update metrics every minute --
 
