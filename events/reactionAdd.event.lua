@@ -38,33 +38,62 @@ local function check(message, hash, client, userId)
     local author = client:getUser(parsed.author)
 
     if hash == hiring.approved then
-      author:send 'Your hiring request has been accepted!'
+      author:send 'Your marketplace request has been accepted!'
 
-      local toSend = template {
-        title = "Hiring request",
+      local toSend = template({
+        title = "<%- get('_action') == 'lfw' and 'Portfolio' or 'Marketplace request' %>",
         description = [[
-        Contact: {{contact}}
-
-
-        Description: {{description}}
-
-        Paying: {{paying}}
-
-        Other: {{other}}
+        <% 
+          local contacts = get('contacts') or {}
+  
+          local msg = ''
+  
+          for i,v in pairs(contacts) do
+            msg = msg .. i .. ': ' .. v .. '\n'
+          end
+  
+          msg = msg:sub(0, #msg - 1) -- Remove trailing newline
+        %>
+        <% if get('_action') == 'sell' then %>
+          Item for sell: <%- get('item') %>
+          Item description: <%- get('description') %>
+          Price: <%- get('prices') %>
+          Other: <%- get('other') %>
+        <% elseif get('_action') == 'hire' then %>
+          Skills looking for:  <%- table.concat(get('channels'), ', ') %>
+          Job description: <%- get('description') %>
+          Payment: <%- get('prices') %>
+          Other: <%- get('prices') %>
+        <% elseif get('_action') == 'lfw' then %>
+          Title: <%- get('title') %>
+          Description: <%- get('description') %>
+          Examples of work: <%- get('work') %>
+          More examples of work: <%- get('work_location') %>
+        <% end %>
+        Contact details:
+        <%- msg %>
         ]]
-      }
+      }, true)
 
       toSend = toSend:render {
-        contact = author.tag,
-        paying = parsed.prices,
-        description = parsed.description,
-        other = parsed.other
+        get = function(item)
+          return parsed[item]
+        end
       }
+      if parsed._action == 'hire' then
+        for _,v in pairs(parsed.channels) do
+          local id = channels[v]
 
-      for _,v in pairs(parsed.channels) do
-        local id = channels[v]
+          local channel = client:getChannel(id)
 
-        local channel = client:getChannel(id)
+          toSend:send(channel)
+        end
+      elseif parsed._action == 'sell' then
+        local channel = client:getChannel(channels.selling)
+
+        toSend:send(channel)
+      elseif parsed._action == 'lfw' then
+        local channel = client:getChannel(channels.portfolio)
 
         toSend:send(channel)
       end
