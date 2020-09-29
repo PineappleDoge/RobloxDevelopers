@@ -3,6 +3,8 @@ local toml = require 'toml'
 local json = require 'json'
 local fs = require 'fs'
 
+local Date = require 'discordia'.Date
+
 local config = toml.parse(fs.readFileSync('config.toml'), {strict = true})
 
 local command, prompt, template, embed, util = comrade.LuaCommand, comrade.prompt, comrade.Template, comrade.Embed, comrade.util
@@ -224,7 +226,7 @@ function comm:execute(msg, _, client)
           prompt:reply 'Sent for approval!'
 
           msg:reply 'Prompt has finished'
-          self.cooldowns[msg.author.id] = true
+          self.cooldowns[msg.author.id] = Date()
 
           prompt:close()
         end
