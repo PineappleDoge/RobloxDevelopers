@@ -1,6 +1,6 @@
 FROM archlinux
 
-RUN pacman -Sy --noconfirm nodejs npm curl neofetch
+RUN pacman -Sy --noconfirm nodejs npm curl
 
 RUN npm install pm2 -g
 
@@ -12,7 +12,7 @@ WORKDIR /code
 
 COPY package*.json ./
 
-RUN npm i -ci
+RUN npm i
 
 COPY . .
 
