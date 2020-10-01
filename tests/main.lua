@@ -1,3 +1,4 @@
+require('luacov')
 local Client, faker, dotenv
 do
   local _obj_0 = require('Comrade')

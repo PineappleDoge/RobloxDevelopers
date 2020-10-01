@@ -1,5 +1,6 @@
-import Client, faker, dotenv from require 'Comrade'
+require 'luacov'
 
+import Client, faker, dotenv from require 'Comrade'
 
 unless process.env.TOKEN -- If they are already added we don't need to check for an env
   dotenv.config!

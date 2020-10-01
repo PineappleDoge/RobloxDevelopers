@@ -3,3 +3,4 @@ cache
 discordia.log
 gateway.json
 node_modules
+*.out
