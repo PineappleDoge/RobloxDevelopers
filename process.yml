@@ -1,5 +1,3 @@
 apps:
-  - script: statistics.js
-    name  : 'Statistics-server'
-  - script: luvit main.lua 4864
+  - script: luvit main.lua
     name  : 'Discord-bot'
