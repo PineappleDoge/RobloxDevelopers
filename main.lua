@@ -6,11 +6,11 @@ local json = require 'json'
 
 local timer = require 'timer'
 
-local logger = require './logger'
-
 local client, dotenv = comrade.Client, comrade.dotenv
 
 dotenv.config()
+
+local logger = require './logger'
 
 if not fs.accessSync './cache' then
   fs.mkdirSync 'cache'
@@ -21,7 +21,7 @@ local bot = client(process.env.TOKEN, {
     '525840152103223338',
     '294602562819325955'
   },
-  prefix = "`",
+  prefix = {"`", "="},
   logFile = './cache/discordia.log',
   gatewayFile = './cache/gateway.json'
 })
