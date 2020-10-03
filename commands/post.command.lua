@@ -59,6 +59,7 @@ function comm:execute(msg, _, client)
   prompt({
     channel = msg.author:getPrivateChannel(),
     author = msg.author
+    reply = msg.reply
   }, client, {
     embed = true,
     timeout = util.minutes(2),
