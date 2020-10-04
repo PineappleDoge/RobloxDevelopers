@@ -5,6 +5,7 @@ addons:
     - curl
     - lua5.1
     - luarocks
+    - make
 branches:
   only:
   - master
@@ -12,9 +13,8 @@ install:
 - curl -L https://github.com/luvit/lit/raw/master/get-lit.sh | sh
 - sudo mv ./luvit /bin/
 - sudo luarocks install luacov
-script:
-- cd tests
-- luvit main.lua
+script: 
+- make test
 after_success:
 - wget https://raw.githubusercontent.com/DiscordHooks/travis-ci-discord-webhook/master/send.sh
 - chmod +x send.sh

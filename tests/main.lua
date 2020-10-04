@@ -4,7 +4,7 @@ do
   local _obj_0 = require('Comrade')
   Client, faker, dotenv = _obj_0.Client, _obj_0.faker, _obj_0.dotenv
 end
-if not (process.env.TOKEN) then
+if not (process.env.TO_TEST) then
   dotenv.config()
 end
 local prefix = '='
