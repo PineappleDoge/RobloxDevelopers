@@ -55,20 +55,20 @@ local function check(message, hash, client, userId)
           msg = msg:sub(0, #msg - 1) -- Remove trailing newline
         %>
         <% if get('_action') == 'sell' then %>
-          Item for sell: <%- get('item') %>
-          Item description: <%- get('description') %>
-          Price: <%- get('prices') %>
-          Other: <%- get('other') %>
+        Item for sell: <%- get('item') %>
+        Item description: <%- get('description') %>
+        Price: <%- get('prices') %>
+        Other: <%- get('other') %>
         <% elseif get('_action') == 'hire' then %>
-          Skills looking for:  <%- table.concat(get('channels'), ', ') %>
-          Job description: <%- get('description') %>
-          Payment: <%- get('prices') %>
-          Other: <%- get('prices') %>
+        Skills looking for:  <%- table.concat(get('channels'), ', ') %>
+        Job description: <%- get('description') %>
+        Payment: <%- get('prices') %>
+        Other: <%- get('prices') %>
         <% elseif get('_action') == 'lfw' then %>
-          Title: <%- get('title') %>
-          Description: <%- get('description') %>
-          Examples of work: <%- get('work') %>
-          More examples of work: <%- get('work_location') %>
+        Title: <%- get('title') %>
+        Description: <%- get('description') %>
+        Examples of work: <%- get('work') %>
+        More examples of work: <%- get('work_location') %>
         <% end %>
         Contact details:
         <%- msg %>

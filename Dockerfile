@@ -10,10 +10,6 @@ RUN mv ./luvit /bin
 
 WORKDIR /code
 
-COPY package*.json ./
-
-RUN npm i
-
 COPY . .
 
 CMD ["pm2-runtime", "process.yml"]

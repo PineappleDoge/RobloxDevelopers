@@ -8,7 +8,7 @@ if not (process.env.TOKEN) then
   dotenv.config()
 end
 local prefix = '='
-local bot = Client(process.env.TESTING, {
+local bot = Client(process.env.TO_TEST, {
   prefix = prefix,
   testing = true,
   botid = '753093872959094854'
@@ -19,6 +19,7 @@ local tester = faker.Client(process.env.TESTER, {
   mainbot = bot,
   waitTime = 2500
 })
+bot:addCommand(require('../commands/post.command')())
 bot:addCommand(require('../commands/example.command')())
 require('../plugins/information.plugin'):use(bot)
 bot:login()

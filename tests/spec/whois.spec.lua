@@ -1,5 +1,5 @@
 return describe('whois command', function()
-  it('get information on self', function()
+  it('should get information on self', function()
     local msg = assert(execute(tostring(bot.prefix) .. "whois"))
     local embed = msg.embeds[1]
     local fields = { }
