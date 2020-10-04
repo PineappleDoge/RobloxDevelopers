@@ -1,38 +1,31 @@
 language: c
-
 addons:
   apt:
     packages:
     - curl
     - lua5.1
     - luarocks
-
 branches:
   only:
   - master
-
 install:
 - curl -L https://github.com/luvit/lit/raw/master/get-lit.sh | sh
 - sudo mv ./luvit /bin/
-- sudo luarocks install luacov-coveralls
-
+- sudo luarocks install luacov
 script:
 - cd tests
 - luvit main.lua
-
+after_success:
+- wget https://raw.githubusercontent.com/DiscordHooks/travis-ci-discord-webhook/master/send.sh
+- chmod +x send.sh
+- "./send.sh success $WEBHOOK_URL"
+- bash <(curl -s https://codecov.io/bash)
+after_failure:
+- wget https://raw.githubusercontent.com/DiscordHooks/travis-ci-discord-webhook/master/send.sh
+- chmod +x send.sh
+- "./send.sh failure $WEBHOOK_URL"
 env:
   global:
-  - secure: DVzbFYHJU0nCk8vsPpbTnRCufRr+5EhgzIcIHDlF2udgOsKb2EdmVdjiVdIB0VM6nnP2xwGuza9NSKbSI17oWfdDupllJqTddM4j0tWDwhLUEeq7vb0uLhS/2dJshoJazvr0SxnHOB5QkooQP16meUirOK1dThJJlOY/uR5PhNNkodJbUo93WYmg1SbCmSkOt5WpL2qC4QrxwqUVJuhwCZX5jhJdI4O+hl7bXVX1I/dWHkMXrFZPw5FCd1sRY8IrDzc6nwmBKL2zfcoaKIjSYI1M+S1aniwrjsj+IEqqru9DCuQAXZ7FxF34uFlCtnCNh4+JzPSdPXwq36h32pvYM4aWRq0TSFDDHg2T9sIv7oWpKptP6Wlzl+WTGw8tqsQdn0392lSuLIDXtw5UJtUktCOOzkI6x+Htxe9T0IGiBONzD6Y/aRah9BOauLJvFZovIGCNIbgCfiC2IjD2+sTveCSuYE+i6HN/udqvoV5S+Bm+Zyv2CzKCozdUGfq9SBoHLmhDlUXX8r8LCZtrrNpO9KSZ2WhcUsNCbzWfEK7lGgl9Z6JfmLJ44faj5B3HlGH6ygniWenOLmZIpg96Dt2bIiPKmKgKLu/dzBv2amj6KFVSASQRVGg0AGVVo9JStHkgrAUzzIxgV5csB7PC2+NBDNNrr33NSNKyPOrEmxpbZkA=
-  - secure: aJWl84tZ01I+kUhS9J8ic+IU3+al0HLmsD1MuSDoVZgzlrCzoBKX91joRu/LjhOWTbO3EP/hUXYikdONJXwfg7AKFtdemlNQU2zUlzfnOn42f2uN+19Q537+D7HLtKFR1T1J9Bn2rQJqSJVaoOZo3xrHz/APlf8UkVLgvHsLhW3c5MkLkJQd/HzazvN93oX+rUDdwxLZa4S8rMJsBQuQucl/jctUfn0RpayytTL+PaJnD9CiDwIsRIKf5a03YsTz9J2b1yGpW6uuWJTE1mwTV7+Y5kfG6WPgwaya3hW58WA4BQUyxbJfBhgn6GfQU0pO1KiXIVKJl5h5GEtn6iqNyge1JA5J4LhzxnkESWSjB2MPTcbWGWZPkk54vXLfFckM+QVn2si9JI/x6ThEZT0QuLAlCIlO0XlLs+liRvVhRmEBcaVzpPdUOCMONDC86W1DcRQJXzybrZ/x5QVF7mCH5nNJW88/SJamBySEAPzCiejkuw3k+JHRuPXzfnHwCBciYl4G5Qc3N8nPn2iTI+S/aE/Hg2iytGOyaV3tbSY8waHzz5mSSS1CAHEcmjGvfxiA+FKK4jLRFlvo5hfcdyMNG0aZqjQH4lfB8JPsomQup/7NB9SKJp2C0yEW+SVvnV7UKDfIx2ax+HUmNvXMc3fDRzbgjylkaV+zfmNbkVA3VFA=
-  - secure: WNwZwSNdib+8j+TrR9zrHr3lIu64l+y6/biELhZ7KEEocHFyhtnKhx7MKjVCOIlxO97FplMZdSgXUuRFFGXe7pTxx3OXrHaJeN3QLiiDYaOl/2+/TWvIaePw8cwH2CEWDmN2/UjQjDqd8oQBsTy0iB3At8pb7FRFziaLVf6YZr+snsrWMF6NnxkGLvqPwhu+R5oU5e3w5wXd7nIhLouWeRB2pkMKptLUsuJCTrm83iI0NCz7ujoQ2d66cFp/lBAynaaWhuh4DEogScTUqPNG1LyX3wzkxRYPuCrEZlp/Diin0YBxsakeG/YLDYt3dgviH6bAYVyy7g5p+S+xg5NZ+ERJKIVHwB/3AHAORsSGRDkdi2heXbRx8aI8boNk6G9ymsrz6MMjAzoiiFSV+CpBwlTaBWdAEaThBf1jChjI8sTN2Ac9wzjk631UtQMGAXyRrp2qXy9AB8DMjwpAeQ76hCyru9cjue+l2O5LjbB/60ZW8wJ95ml8w59OH0ngVWP9cj0XZsJkKvGBmlHC9NwMbfbR8WtnDzCk9L5i8L7WArAQCseiBbKQ8nZFTu4EJ/dBZ8ttVSutAqSEfyq1Izftp7aKYPgR1GjZxX/+2DUCJzcNqD15lJWyilEOnynYcPKs1pJortlJYqWjtQNulk8nbKJ6v8qKf4+YjmuN7QNf+d8=
-
-after_success:
-  - wget https://raw.githubusercontent.com/DiscordHooks/travis-ci-discord-webhook/master/send.sh
-  - chmod +x send.sh
-  - ./send.sh success $WEBHOOK_URL
-  - luacov-coveralls
-
-after_failure:
-  - wget https://raw.githubusercontent.com/DiscordHooks/travis-ci-discord-webhook/master/send.sh
-  - chmod +x send.sh
-  - ./send.sh failure $WEBHOOK_URL
+  - secure: eKJiqMO7nQTIZT6H6ngVo1nWqswkTFqXq+IZrQdkIqiFgtXu3XJwZkZQ7cWOj1B4rXqIYjnpS8OOTPf2C7x8LfsVRdsIudKsZt08whBcenmhRlmhNje+B7TH2Spwn22jgP1Txx1zdbOUgbA6+MFJad8uGlrEv1ArgXFZeI+uqNQXR/1Za7571LLjmjoiDzhDt6WtsihOFYEGPxCtCPal1s4AgELViegVyYd6MOsh5r2jxvaS/8ti3x5MxEXqPLktXPAyghbRvpRIRvHcErcuPJSF7O2c2vqSZYVOCvTqjkb8y9rSP/KK8GFZ9IJgyCLmQhgFEViXepS+ol71d0RdzkdCW6uq4oRL7ITazw0Mh402na4QzYJrjgvZq74ZHZqloKtoZcAnqIahu/YprM1kkRMvx3VRIehWhOvGmjtpJakfpt7J13Hh7Ixb1aEQYlxz7I/ojgfojY2S7KZab4X1rJ4lfX4LkCxK2augrFDQoUPAm/dqBGA16CKarw2RAr4TijMwmrSD7buP5Atb8IuCG+sWVM+ryN3+DkmJnnT3WWaKanU2+lGCYSgUAPlUyByHGetCxef0YlV3kcmMgR5Uca2F/2N+Mrm267NOv+okgCN+nSw3PBjK34AQk1IxHmqS3kqoO7qC7cPrRc2BiUCxuzGyXlBv4TIAyBYKuo5JAtk=
+  - secure: A2hJHFbjTVaj1OuZSvET/4X14s6JMKgTfhx2WqVw/D+C8Pf3gtuacz7bIr6QZ+1jBbgi1YKRJUQeigVIqrfSKEegt9ZFRc/Ck8iPoj5Mmw6aQlNShA2qUGZljzeddIwiR9i/EmLa92YCN73iqx6MWsBmApzLdFi4jNkD8KVRpwJ6pN6TzQBE0hiChT9UD0bm0R/GrdoVu+T/b+ut3NeIqVPqP9Y6jsjosS34mYfc965KcOzAORFSEGYRSSQFFW37LQsPYiQvPyURT6Beg6gmKGBnaFvui/mqr/bU0wCvzF7vWn6VtmNOS8Gmfg3wbrXxMt6r/JKSMArpyZSjd6rplo+mAVYwobuDStQ4JSlhz4p5sOcIdtne+hoCL7BbUKtzyt0Xa8kcBJNNZ3y+bPrZHDepJvmDL2TLbSzwVNskJtm5EejX22ae/qT6GTcxcNnaajbM92ypGf49Wc3ZhOV+wYJBIakpG5/IsB7eyWKbH/ty3ssTJmGzeHY/74YQ+13E/v4hh0ODDkjYBVBwaDEbf8LlIpr4uFvHx5XwKvqO35N8vEJsR6jKDcW9X5B72nEsmHnTEV51v5vJkmcce2QSYTdALf21cftFzqp2FpYvuM4qRGMn/v6UvROWi77md4W3D6u8NMmrhrEAflVPEMlL9y82Sju9vHhnkuOO+/wr31E=
+  - secure: IoGp9QeoPZoKjnLHuVYIPuvxKFn1ytuwCZaRWblIgpl58SfC+afNg+89Ky2UVQ/RDQlxqhHWzt75ZcevT4yaLfds0QxAqLoWVeReXvVXLBS299e4XsIjEgp+ZaxW6hHSMV/vxG3541P+BpwWz1b3Nb/70c3e8JKMHT7AglbUAYXkiSqgy0FtRCL/8xMnohRlv1WajUZ4KOgdu49jpdv5p5E67WaTumwtMLuWq8+tTfnUOFWfUA+snLMEY2bGGQKvYGXmEMN8BEx1xe7vZYP5GuPuM6sw8KHVi+fX+wKppTiNbzYIBziucayrIUv2Dg0pAjBVeBQtCCcgzoEVnT+sHa3Qgx0v+1p1THUFop+4tD5WK294qOjJ9haatLZUECYizO/QhHfP4KW4kgEjbMsMGLIpw7E7tBqAZZt47fcIBqNAfyl9gt2onxKEKrYgZxyITrRS+oMFAiviX7fYAKT0AXLTnzGIcFEGqJZrcleAuttVs5ygw+83mNqQbgZjgjTATsjAQiEOG9m75qohdynLzDzTFS9RTlHow4sOAlXZqoLh4rBI6/yiE3SidyF2YpKzlSzKTBWw/4ZFUCESczXifY8oQ/IIjdlNPzT9p2UIMnFK++dVhwzfrWXYu6u/SBuhn9J9Rx+ZZx1BYEe6qUoie5NMwy8O0eEpEYtrwJbQfLA=
