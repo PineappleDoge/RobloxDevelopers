@@ -5,7 +5,9 @@ build:
 	@moonc ./commands ./plugins ./tests
 test:
 	@echo -e '\033[32mRunning tests\033[0m'
-	@cd tests && luvit main.lua && cd ..
+	@cd tests; \
+	luvit main.lua && \
+	mv luacov.stats.out ../luacov.stats.out
 docker:
 	@echo -e '\033[32mRunning Docker\033[0m'
 	@sudo docker-compose up

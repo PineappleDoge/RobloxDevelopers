@@ -1,5 +1,5 @@
 describe 'whois command', () ->
-  it 'get information on self', () ->
+  it 'should get information on self', () ->
     msg = assert execute "#{bot.prefix}whois"
 
     embed = msg.embeds[1]

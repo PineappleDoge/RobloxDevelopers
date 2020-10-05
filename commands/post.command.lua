@@ -35,6 +35,9 @@ local hiring = config.hiring
 comm.cooldown = util.hours(6)
 
 function comm:execute(msg, _, client)
+  if not msg.guild then
+    return msg:reply "This command must be ran in a guild"
+  end
   self.cooldowns[msg.author.id] = nil
 
   local member = msg.member
@@ -55,7 +58,8 @@ function comm:execute(msg, _, client)
 
   prompt({
     channel = msg.author:getPrivateChannel(),
-    author = msg.author
+    author = msg.author,
+    reply = msg.reply
   }, client, {
     embed = true,
     timeout = util.minutes(2),

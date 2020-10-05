@@ -1,12 +1,13 @@
+require 'luacov'
+
 import Client, faker, dotenv from require 'Comrade'
 
-
-unless process.env.TOKEN -- If they are already added we don't need to check for an env
+unless process.env.TO_TEST -- If they are already added we don't need to check for an env
   dotenv.config!
 
 prefix = '='
 
-bot = Client process.env.TESTING, {
+bot = Client process.env.TO_TEST, {
   :prefix
   testing: true
   botid: '753093872959094854'
@@ -21,7 +22,7 @@ tester = faker.Client process.env.TESTER, {
 
 -- Load commands --
 
--- bot\addCommand require('../commands/post.command')!
+bot\addCommand require('../commands/post.command')!
 bot\addCommand require('../commands/example.command')!
 
 require('../plugins/information.plugin')\use bot

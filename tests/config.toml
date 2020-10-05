@@ -1,0 +1,24 @@
+[hiring]
+approved = "✅"
+unapprove = "❌"
+ban = "🔨"
+allowed = [ # If you don't have one of these roles you can't hire
+  "717928933911429182"
+]
+notAllowed = [
+  "738681784128110693"
+]
+banRole = "738681784128110693"
+logs = "738682432932413490"
+
+[hiring.channels]
+portfolio = "741824894064525353"
+builder = "741824894064525353"
+modeler = "741824894064525353"
+scripter = "741824894064525353"
+animator = "741824894064525353"
+clothing = "741824894064525353"
+vfx = "741824894064525353"
+graphics = "741824894064525353"
+other = "741824894064525353"
+selling = "741824894064525353"
