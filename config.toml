@@ -1,3 +1,10 @@
+muted = "484337500333277214"
+
+[showcase]
+channels = [
+  "565283005313056788",
+  "701290428791521371"
+]
 [hiring]
 approved = "✅"
 unapprove = "❌"
