@@ -26,7 +26,7 @@ return lua.class('messageCreate', {
     msgs[msg.author.id] = (msgs[msg.author.id] and msgs[msg.author.id] + 1) or 1
 
     if msgs[msg.author.id]  > 6 then
-      msg.member:addRole(config.muted)
+--       msg.member:addRole(config.muted)
     end
   end}, event, function(self)
   self:super(self,'new')
